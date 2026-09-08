@@ -49,6 +49,9 @@ def main():
     ap.add_argument("--max-report", type=int, default=15)
     ap.add_argument("--strip", action="store_true",
                     help="write back a claims file with unverifiable quotes removed")
+    ap.add_argument("--require-coverage", action="store_true",
+                    help="fail unless every fetched video was either mined for "
+                         "claims or explicitly listed as skipped")
     a = ap.parse_args()
 
     corpus = {v["id"]: v for v in json.load(open(a.corpus))["corpus"]}
@@ -84,7 +87,12 @@ def main():
         good.append(c)
 
     covered = {c["video_id"] for c in good}
+    declared_skipped = set(payload.get("skipped", []))
     silent = [v for v in corpus if v not in covered]
+    # A video nobody opened is not the same as a video read and found empty.
+    # Only the second kind can testify that a position has gone quiet.
+    unaccounted = [v for v in corpus
+                   if v not in covered and v not in declared_skipped]
 
     per_video = Counter(c["video_id"] for c in good)
     print(f"claims={len(claims)} verified={len(good)} problems={len(problems)}")
@@ -102,14 +110,25 @@ def main():
             print(f"  ... and {len(problems) - a.max_report} more")
 
     if silent:
-        print(f"\nno claims extracted from {len(silent)} videos: "
-              f"{', '.join(silent[:8])}{' ...' if len(silent) > 8 else ''}")
+        print(f"\nno claims from {len(silent)} videos "
+              f"({len(declared_skipped & set(silent))} declared skipped, "
+              f"{len(unaccounted)} unaccounted for)")
+
+    if unaccounted:
+        print(f"\nUNACCOUNTED: {len(unaccounted)} fetched videos were neither "
+              f"mined nor declared skipped:")
+        print("  " + ", ".join(unaccounted[:10])
+              + (" ..." if len(unaccounted) > 10 else ""))
+        print("  These are excluded from the absence test, which weakens it. "
+              "Re-run the extraction batches that missed them.")
 
     if a.strip and problems:
         payload["claims"] = good
         json.dump(payload, open(a.claims, "w"), indent=2)
         print(f"\nstripped to {len(good)} verified claims")
 
+    if a.require_coverage and unaccounted:
+        return 2
     return 1 if problems else 0
 
 

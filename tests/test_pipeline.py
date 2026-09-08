@@ -88,6 +88,30 @@ def main():
     check("verify_claims catches an invented quote",
           v2.returncode == 1 and "quote not in transcript" in v2.stdout)
 
+    # The coverage gate: a partial extraction must not sail through.
+    partial = json.load(open(f"{tmp}/claims.json"))
+    partial["claims"] = [c for c in partial["claims"]
+                         if c["video_id"].startswith("old")]
+    json.dump(partial, open(f"{tmp}/partial.json", "w"))
+    v3 = subprocess.run([sys.executable, f"{ROOT}/scripts/verify_claims.py",
+                         "--corpus", f"{tmp}/corpus.json",
+                         "--claims", f"{tmp}/partial.json",
+                         "--require-coverage"], capture_output=True, text=True)
+    check("coverage gate fails a partial extraction", v3.returncode == 2,
+          f"rc={v3.returncode}")
+
+    # ...but passes once every uncovered video is declared skipped.
+    covered = {c["video_id"] for c in partial["claims"]}
+    all_ids = {v["id"] for v in json.load(open(f"{tmp}/corpus.json"))["corpus"]}
+    partial["skipped"] = sorted(all_ids - covered)
+    json.dump(partial, open(f"{tmp}/partial.json", "w"))
+    v4 = subprocess.run([sys.executable, f"{ROOT}/scripts/verify_claims.py",
+                         "--corpus", f"{tmp}/corpus.json",
+                         "--claims", f"{tmp}/partial.json",
+                         "--require-coverage"], capture_output=True, text=True)
+    check("coverage gate passes when silence is declared", v4.returncode == 0,
+          f"rc={v4.returncode}")
+
     a = subprocess.run([sys.executable, f"{ROOT}/scripts/analyse.py",
                         "--corpus", f"{tmp}/corpus.json",
                         "--claims", f"{tmp}/claims.json",

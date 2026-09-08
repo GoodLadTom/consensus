@@ -69,14 +69,31 @@ Then in Claude Code:
 | Phase | What happens |
 |---|---|
 | Scoping | Topic becomes 8-12 distinct search queries |
-| Discovery | Each query run twice — plain relevance, and constrained to the last year |
-| Fetch | Transcripts pulled via yt-dlp, cleaned, cached by video id |
-| Extraction | Parallel agents pull claims specific enough to be wrong |
+| Discovery | Each query run twice — plain relevance, and constrained to the last year — for 140 candidates |
+| Fetch | Works down the list until **100 transcripts** are in hand, cleaned and cached by video id |
+| Extraction | Parallel agents pull claims specific enough to be wrong, from every video |
 | Clustering | Claims saying the same thing in different words become one position |
 | Analysis | Deterministic age weighting and the absence test |
 | Report | One self-contained HTML file |
 
 No video is ever downloaded. Only caption tracks, which are text.
+
+### 100 read, not 100 attempted
+
+The corpus is 100 transcripts and all 100 get read. That is enforced, not
+assumed: discovery over-gathers to 140 because captions and rate limits take a
+cut, fetching continues until 100 succeed, and the verifier **exits 2** if any
+fetched video was never reported on.
+
+This matters more than it sounds. The `expired` verdict rests on testing
+whether a position's absence from recent videos is more than chance, and that
+test divides by how many videos were actually read. Quietly reading 60 of 100
+does not make the answer noisier — it makes it wrong, in the direction of
+inventing dead advice that was never dead.
+
+Measured cost: 100 transcripts is around 362,000 tokens of source, about
+36,000 per agent across ten parallel agents. The binding constraint is fetch
+time — 13 to 17 minutes — not context.
 
 ## What it will not do
 

@@ -78,10 +78,24 @@ fails, re-run it rather than proceeding with a gap.
 ## Check before moving on
 
 ```bash
-python3 scripts/verify_claims.py --corpus "$RUN/corpus.json" --claims "$RUN/claims.json"
+python3 scripts/verify_claims.py \
+  --corpus "$RUN/corpus.json" --claims "$RUN/claims.json" --require-coverage
 ```
 
 This checks every quote appears in its transcript, every id is unique and
-well-formed, and no video is silently missing. Fix what it reports before
-clustering — a fabricated quote that survives to the report is the one failure
-that discredits the whole thing.
+well-formed, and every fetched video was either mined or explicitly declared
+skipped.
+
+**Exit codes:** `0` clean · `1` bad quotes or malformed claims · `2` coverage
+gate — videos were fetched but never reported on.
+
+Do not continue on a non-zero exit.
+
+- **Exit 2** means an extraction batch silently dropped videos. Re-run those
+  batches. Every video the corpus paid for must be read, or the absence test
+  in Phase 5 loses the power that makes `expired` possible at all. This is the
+  gate that stops a hundred-video corpus quietly becoming a sixty-video one.
+- **Exit 1** means a quote could not be found in its transcript. A fabricated
+  quote reaching the report is the one failure that discredits the whole
+  thing, so fix these rather than stripping them, unless the agent clearly
+  paraphrased and the claim is sound.

@@ -130,6 +130,10 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--sleep-requests", type=float, default=1.5)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--target-read", type=int, default=0,
+                    help="keep working down the candidate list until this many "
+                         "transcripts are in hand, rather than attempting a "
+                         "fixed number and landing short")
     ap.add_argument("--pause-every", type=int, default=25,
                     help="videos between longer breathers (0 disables)")
     ap.add_argument("--pause-seconds", type=float, default=45.0)
@@ -144,6 +148,12 @@ def main():
 
     fetched_this_stretch = 0
     for i, c in enumerate(cands, 1):
+        # Stop as soon as we have what we came for. Candidates are ranked, so
+        # the ones past this point are the weakest anyway.
+        if a.target_read and len(got) >= a.target_read:
+            print(f"reached {a.target_read} transcripts after {i - 1} attempts",
+                  file=sys.stderr)
+            break
         vid = c["id"]
         # Spend the request budget in stretches. Waiting 45s once is cheaper
         # than losing videos to a limit that then takes minutes to clear.
@@ -194,6 +204,12 @@ def main():
     dated = [c for c in corpus if c.get("upload_date")]
     print(f"\ncorpus={len(corpus)} dropped={len(dropped)} "
           f"dated={len(dated)}", file=sys.stderr)
+
+    if a.target_read and len(corpus) < a.target_read:
+        print(f"\nSHORT: wanted {a.target_read} transcripts, got {len(corpus)}. "
+              f"Candidate list exhausted. Widen the queries in phase 0 and "
+              f"re-run - the cache keeps everything already fetched.",
+              file=sys.stderr)
 
     json.dump({"corpus": corpus, "dropped": dropped},
               open(a.out, "w"), indent=2)

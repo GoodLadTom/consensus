@@ -6,8 +6,14 @@
 python3 scripts/fetch.py \
   --candidates "$RUN/candidates.json" \
   --cache cache \
+  --target-read 100 \
   --out "$RUN/corpus.json"
 ```
+
+`--target-read 100` works down the ranked candidate list until 100 transcripts
+are actually in hand, then stops. This is the difference between *attempting*
+100 and *getting* 100 — attempting exactly 100 lands somewhere in the low
+nineties once captions and rate limits take their cut.
 
 Roughly 13-17 minutes for 100 videos, including the pauses. Tell the user the
 number before starting so the wait is expected, then let it run.
@@ -27,8 +33,12 @@ The script prints `corpus=N dropped=N dated=N`.
   `corpus.json.dropped`. A run of `rate_limited` means the IP is still cooling
   off; wait and re-run, the cache keeps everything already fetched.
 - **`dated` well below `corpus`** — the age analysis weakens. Say so later.
-- **`corpus` under 30** — too thin for a consensus. Go back to Phase 0 and
-  widen, rather than reporting a consensus of twelve videos.
+- **`SHORT:` in the output** — the candidate list ran out before 100
+  transcripts were in hand. Go back to Phase 0, add queries, and re-run. The
+  cache keeps everything already fetched, so the second run only pays for the
+  new videos.
+- **`corpus` under 30** — too thin for a consensus even to be attempted. Widen
+  the queries rather than reporting a consensus of twelve videos.
 
 Transcripts land in `cache/<id>.txt` as clean prose with a `[mm:ss]` marker
 every 30 seconds. Rolling-caption duplication is already stripped, which is

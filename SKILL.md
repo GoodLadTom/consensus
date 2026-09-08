@@ -42,6 +42,29 @@ plausibly be chance, the position is filed as `fading` and no claim is made.
 
 Optionally: `/consensus <topic> --videos 60 --recent-months 18`
 
+## The standard: 100 transcripts, actually read
+
+The default corpus is **100 transcripts, every one of them read**. Not 100
+attempted, not 100 fetched and 60 mined. This is enforced rather than trusted:
+
+1. Discovery gathers **140** candidates, because captions and rate limits take
+   a cut of any list.
+2. Fetch runs with `--target-read 100` and works down the ranked list until
+   100 transcripts are in hand, then stops.
+3. Extraction covers **every** video in the corpus, and
+   `verify_claims.py --require-coverage` **exits 2** if any video was fetched
+   but never reported on. Do not proceed past a non-zero exit.
+
+The reason is not tidiness. Phase 5 decides that advice has expired by testing
+whether a position's absence from recent videos is more than chance. That test
+divides by how many videos were actually read. Silently reading 60 of 100
+does not make the answer noisier — it makes it wrong, and wrong in the
+direction of inventing dead advice that was never dead.
+
+Cost, measured rather than estimated: 100 transcripts is about 362,000 tokens
+of source, roughly 36,000 per agent across ten parallel agents. Comfortable.
+The binding constraint is fetch time, not context.
+
 ## Pipeline
 
 Work through the phase files in order. Each one states its inputs, its output
