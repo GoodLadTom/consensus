@@ -27,6 +27,29 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import vtt  # noqa: E402
 
 
+# Everything the rest of the pipeline reads from a video's metadata. yt-dlp
+# writes about 2.8MB per video, almost all of it caption URLs for every
+# language on the platform and format variants we never look at. The cache is
+# meant to persist across runs, so it is slimmed on the way in.
+KEEP = ("id", "title", "channel", "channel_id", "channel_follower_count",
+        "uploader", "upload_date", "timestamp", "duration", "view_count",
+        "like_count", "comment_count", "categories", "tags")
+
+
+def slim(meta_path):
+    """Rewrite an info.json down to the fields we actually use."""
+    try:
+        with open(meta_path, encoding="utf-8") as fh:
+            full = json.load(fh)
+    except (OSError, json.JSONDecodeError):
+        return
+    if len(full) <= len(KEEP) + 2:
+        return  # already slimmed
+    lean = {k: full.get(k) for k in KEEP if k in full}
+    with open(meta_path, "w", encoding="utf-8") as fh:
+        json.dump(lean, fh)
+
+
 def fetch_one(vid, cache_dir, sleep_requests):
     """Return (status, payload). Status is ok | no_captions | rate_limited | error."""
     meta_path = os.path.join(cache_dir, f"{vid}.info.json")
@@ -62,6 +85,7 @@ def fetch_one(vid, cache_dir, sleep_requests):
 
     if not os.path.exists(meta_path):
         return "error", err.strip().splitlines()[-1:] or ["no metadata"]
+    slim(meta_path)
     if not vtt_path:
         open(none_path, "w").close()
         return "no_captions", None
