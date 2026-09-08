@@ -281,6 +281,21 @@ def main():
         floor_note = ('One side of the age split is empty, so nothing can be '
                       'called expired or current in this run.')
 
+    ctrl_note = ""
+    if s.get("bucket_controlled") and s.get("corpus_all_recent"):
+        held = s["corpus_all_recent"] - s["corpus_recent"]
+        if held:
+            ctrl_note = (
+                f'<p>The expired and current verdicts are tested on the '
+                f'{s["corpus_recent"]} recent and {s["corpus_old"]} older videos that '
+                f'relevance search reached, not the full {s["corpus_total"]}. '
+                f'The other {plural(held, "recent video")} came only from a '
+                f'date-filtered search, which surfaces newer and more tactical '
+                f'material than relevance ranking ever returns for older years. '
+                f'Comparing those two directly would report that sampling '
+                f'difference as advice dying. All {s["corpus_total"]} videos still '
+                f'count towards support and weighting.</p>')
+
     unread = s.get("corpus_unread") or 0
     unread_note = ""
     if unread:
@@ -304,6 +319,7 @@ def main():
  <b>{strength_headline}</b>
  {esc(s.get("strength_note", ""))}
  <p>{floor_note}</p>
+ {ctrl_note}
 </div>
 <details class="method"><summary>How to read this, and what it cannot tell you</summary>
 <p>Every claim is tied to the video that made it and weighted by that video's

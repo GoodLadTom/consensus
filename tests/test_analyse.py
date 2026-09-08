@@ -112,6 +112,15 @@ def main():
     print(f"{'PASS' if ok else 'FAIL'}  explicitly-read silence still yields expired: "
           f"status={got4['unread_case']['status']}")
 
+    # One recent voice refutes "nobody says this any more".
+    make(tmp, {"counterexample_case":
+               [f"old{i}" for i in range(10)] + ["new0"]})
+    got5 = run(tmp)
+    ok = got5["counterexample_case"]["status"] != "expired"
+    fails += not ok
+    print(f"{'PASS' if ok else 'FAIL'}  one recent backer blocks expired: "
+          f"status={got5['counterexample_case']['status']}")
+
     print("\nALL PASS" if not fails else f"\n{fails} FAILURE(S)")
     return 1 if fails else 0
 

@@ -198,7 +198,10 @@ def main():
             dropped.append({"id": vid, "reason": "bad_metadata"})
             continue
         meta["buckets"] = by_id.get(vid, {}).get("buckets", [])
-        meta["transcript"] = os.path.join(a.cache, f"{vid}.txt")
+        # Absolute, because extraction agents are handed these paths from a
+        # run directory and a relative one resolves against the wrong root.
+        meta["transcript"] = os.path.abspath(
+            os.path.join(a.cache, f"{vid}.txt"))
         corpus.append(meta)
 
     dated = [c for c in corpus if c.get("upload_date")]

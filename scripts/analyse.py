@@ -25,6 +25,17 @@ about silence - so the denominators here count only videos that extraction
 covered, and a video yielding no claims counts only when extraction said so
 explicitly. Skipping this distinction invents expired advice out of nothing.
 
+It is also only valid when both halves are sampled the same way, which is the
+subtler trap and one this tool fell into on its first live run. Discovery
+fills the recent half partly from a date-filtered search that surfaces videos
+relevance ranking never would - newer, smaller, more tactical - while the
+older half can only ever come from relevance ranking, which favours evergreen
+strategy videos. Compare those two halves directly and broad advice looks
+dead when it is merely absent from a novelty-skewed sample. So the absence
+test runs only over videos found by relevance search, which is the one
+selection mechanism that reaches both time periods. Every video still counts
+towards support and weighting; only the expired/current verdict is restricted.
+
 Support is counted in distinct channels, not videos. One channel uploading
 five videos that say the same thing is one person's opinion, not five.
 """
@@ -141,6 +152,13 @@ def main():
                     help="distinct channels needed before we call anything")
     ap.add_argument("--alpha", type=float, default=0.10,
                     help="how unlikely an absence must be to count as real")
+    ap.add_argument("--test-bucket", default="top",
+                    help="the discovery bucket whose videos are comparable "
+                         "across time, used for the absence test")
+    ap.add_argument("--no-bucket-control", action="store_true",
+                    help="test absence over the whole corpus. Only safe when "
+                         "both halves were sampled the same way; otherwise it "
+                         "reports novelty bias as expired advice.")
     ap.add_argument("--assume-full-coverage", action="store_true",
                     help="count every fetched video as read, even ones "
                          "extraction never reported on. Off by default: an "
@@ -154,6 +172,9 @@ def main():
     for v in corpus.values():
         v["age"] = age_years(v.get("upload_date"), now)
         v["is_recent"] = (v["age"] is not None and v["age"] <= recent_cutoff)
+        # Relevance search is the only bucket that reaches both time periods,
+        # so it is the only one the absence test can compare across.
+        v["comparable"] = a.test_bucket in (v.get("buckets") or [])
 
     dated = []
     corpus_recent = corpus_old = 0
@@ -171,8 +192,16 @@ def main():
             corpus.pop(vid)
 
     dated = [v for v in corpus.values() if v["age"] is not None]
-    corpus_recent = sum(1 for v in dated if v["is_recent"])
-    corpus_old = len(dated) - corpus_recent
+    comparable = [v for v in dated if v["comparable"]]
+    if not a.no_bucket_control and comparable:
+        corpus_recent = sum(1 for v in comparable if v["is_recent"])
+        corpus_old = len(comparable) - corpus_recent
+    else:
+        for v in corpus.values():
+            v["comparable"] = True
+        comparable = dated
+        corpus_recent = sum(1 for v in dated if v["is_recent"])
+        corpus_old = len(dated) - corpus_recent
 
     out = []
     for cl in clusters:
@@ -187,6 +216,7 @@ def main():
             by_channel[v.get("channel") or vid].append(v)
 
         recent_ch, old_ch = set(), set()
+        cmp_recent_ch, cmp_old_ch = set(), set()
         weight = 0.0
         for ch, videos in by_channel.items():
             # A channel counts once, at the weight of its most recent video.
@@ -196,10 +226,32 @@ def main():
                 recent_ch.add(ch)
             elif best["age"] is not None:
                 old_ch.add(ch)
+            # Same again, over the comparable sample only.
+            cmp_videos = [v for v in videos if v.get("comparable")]
+            if cmp_videos:
+                cbest = min(cmp_videos,
+                            key=lambda v: v["age"] if v["age"] is not None else 99)
+                if cbest["is_recent"]:
+                    cmp_recent_ch.add(ch)
+                elif cbest["age"] is not None:
+                    cmp_old_ch.add(ch)
 
-        label, p_absent = classify(len(recent_ch), len(old_ch),
+        label, p_absent = classify(len(cmp_recent_ch), len(cmp_old_ch),
                                    corpus_recent, corpus_old,
                                    a.min_backing, a.alpha)
+        # A position can be well backed overall yet too thin inside the
+        # comparable sample to test. Say thin rather than guessing.
+        if label in ("expired", "current", "fading", "emerging") and \
+                len(cmp_recent_ch) + len(cmp_old_ch) < a.min_backing:
+            label, p_absent = "thin", None
+        # The comparable sample decides how much power the test has, but a
+        # single real counter-example anywhere in the corpus settles the
+        # question outright. Nobody says this any more is refuted by somebody
+        # saying it last month, whichever search surfaced them.
+        if label in ("expired", "fading") and recent_ch:
+            label, p_absent = "settled", None
+        if label in ("current", "emerging") and old_ch:
+            label, p_absent = "settled", None
 
         ages = [corpus[v]["age"] for v in vids if corpus[v]["age"] is not None]
         out.append({
@@ -210,6 +262,8 @@ def main():
             "channels": len(by_channel),
             "channels_recent": len(recent_ch),
             "channels_old": len(old_ch),
+            "tested_recent": len(cmp_recent_ch),
+            "tested_old": len(cmp_old_ch),
             "videos": len(vids),
             "weighted_support": round(weight, 3),
             "newest_years": round(min(ages), 2) if ages else None,
@@ -245,6 +299,10 @@ def main():
         "corpus_dated": len(dated),
         "corpus_recent": corpus_recent,
         "corpus_old": corpus_old,
+        "corpus_all_recent": sum(1 for v in dated if v["is_recent"]),
+        "corpus_all_old": sum(1 for v in dated if not v["is_recent"]),
+        "bucket_controlled": not a.no_bucket_control,
+        "test_bucket": a.test_bucket,
         "recent_months": a.recent_months,
         "half_life_years": a.half_life,
         "alpha": a.alpha,

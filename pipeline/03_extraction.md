@@ -40,6 +40,11 @@ batch, in parallel, in a single message. For each video the agent reads
 Read those files with the Read tool, not `cat`. YouTube video ids can start
 with a hyphen (`-fS8na576Jc`), which shell tools read as a flag and choke on.
 
+Hand each agent **absolute** transcript paths. An agent working from a run
+directory will resolve a relative path against the wrong root and report the
+file missing — five agents hit this on the first live run before `fetch.py`
+was changed to store absolute paths.
+
 Give every agent this contract:
 
 > For each video, read `cache/<video_id>.txt`. Extract every claim that is
