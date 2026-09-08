@@ -68,6 +68,28 @@ section{margin-bottom:52px}
 .q cite{font:12px/1.5 ui-sans-serif,system-ui,sans-serif;color:var(--muted);font-style:normal}
 .q a{color:var(--current);text-decoration:none}
 .q a:hover{text-decoration:underline}
+.strength{border:1px solid var(--line);border-left:3px solid var(--neutral);
+ background:var(--card);border-radius:8px;padding:16px 20px;margin-bottom:14px;
+ font:13px/1.65 ui-sans-serif,system-ui,sans-serif}
+.strength[data-s="strong"]{border-left-color:var(--settled)}
+.strength[data-s="fair"]{border-left-color:var(--settled)}
+.strength[data-s="lopsided"]{border-left-color:var(--expired)}
+.strength[data-s="limited"]{border-left-color:var(--expired)}
+.strength[data-s="weak"]{border-left-color:var(--expired)}
+.strength b{display:block;font-size:1rem;margin-bottom:6px;
+ font-family:ui-serif,Georgia,serif}
+.strength p{margin:8px 0 0;color:var(--muted)}
+.srcs{list-style:none;margin:0;padding:0}
+.srcs li{display:grid;grid-template-columns:auto 1fr auto;gap:14px;
+ align-items:baseline;padding:10px 0;border-bottom:1px solid var(--line);
+ font:13px/1.5 ui-sans-serif,system-ui,sans-serif}
+.srcs li:last-child{border-bottom:0}
+.srcs .dt{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.srcs a{color:var(--ink);text-decoration:none;font-weight:600}
+.srcs a:hover{color:var(--current);text-decoration:underline}
+.srcs .ch{color:var(--muted);font-weight:400}
+.srcs .used{color:var(--muted);white-space:nowrap;font-size:12px}
+@media(max-width:600px){.srcs li{grid-template-columns:1fr;gap:2px}}
 .vs{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;
  background:var(--card);border:1px solid var(--line);border-radius:8px;
  padding:16px 20px;margin-bottom:12px}
@@ -168,6 +190,31 @@ def main():
     corpus = {v["id"]: v for v in json.load(open(a.corpus))["corpus"]}
     dropped = json.load(open(a.corpus)).get("dropped", [])
 
+    # Credit every source, and say which ones actually carried a position.
+    contributing = {vid for c in clusters for vid in c.get("video_ids", [])}
+    analysed = set(s.get("analysed_ids") or corpus)
+    src_rows = []
+    for v in sorted(corpus.values(),
+                    key=lambda v: v.get("upload_date") or "", reverse=True):
+        date = v.get("upload_date") or ""
+        pretty = f"{date[:4]}-{date[4:6]}-{date[6:8]}" if len(date) == 8 else "undated"
+        views = v.get("view_count")
+        if v["id"] in contributing:
+            used = "cited"
+        elif v["id"] in analysed:
+            used = "read, nothing cited"
+        else:
+            used = "not read"
+        src_rows.append(
+            f'<li><span class="dt">{pretty}</span>'
+            f'<span><a href="{esc(v.get("url"))}" target="_blank" rel="noopener">'
+            f'{esc(v.get("title") or v["id"])}</a><br>'
+            f'<span class="ch">{esc(v.get("channel") or "unknown channel")}'
+            f'{f" &middot; {views:,} views" if isinstance(views, int) else ""}'
+            f'</span></span>'
+            f'<span class="used">{used}</span></li>')
+    sources_html = "".join(src_rows)
+
     body = []
     by_id = {c["id"]: c for c in clusters}
     pairs = s.get("contradiction_pairs") or []
@@ -210,6 +257,30 @@ def main():
         body.append('<p class="empty">No clusters survived analysis.</p>')
 
     gen = datetime.fromisoformat(s["generated"]).strftime("%d %B %Y")
+    STRENGTH_HEAD = {
+        "strong": "Large corpus", "fair": "Fair corpus",
+        "lopsided": "Uneven corpus", "limited": "Small corpus",
+        "weak": "Very small corpus",
+    }
+    strength_headline = (
+        f'{STRENGTH_HEAD.get(s.get("strength"), "Corpus")}: '
+        f'{plural(s["corpus_total"], "video")} from '
+        f'{plural(s.get("channels_total") or 0, "channel")}, '
+        f'{s["corpus_recent"]} in the last {int(s["recent_months"])} months '
+        f'and {s["corpus_old"]} older')
+
+    floor = s.get("min_backing_for_expired")
+    if floor:
+        floor_note = (
+            f'With a corpus this shape, a position needs at least '
+            f'{plural(floor, "older channel")} behind it before its absence '
+            f'from recent videos can be called expired. Anything backed by '
+            f'fewer is filed as fading, whatever it looks like. So "no expired '
+            f'advice" here means none was detectable, not that none exists.')
+    else:
+        floor_note = ('One side of the age split is empty, so nothing can be '
+                      'called expired or current in this run.')
+
     unread = s.get("corpus_unread") or 0
     unread_note = ""
     if unread:
@@ -229,6 +300,11 @@ def main():
  <div class="stat"><b>{len(clusters)}</b><span>positions found</span></div>
  <div class="stat"><b>{s["status_counts"].get("expired", 0)}</b><span>expired</span></div>
 </div>
+<div class="strength" data-s="{s.get("strength", "fair")}">
+ <b>{strength_headline}</b>
+ {esc(s.get("strength_note", ""))}
+ <p>{floor_note}</p>
+</div>
 <details class="method"><summary>How to read this, and what it cannot tell you</summary>
 <p>Every claim is tied to the video that made it and weighted by that video's
 age, halving every {s["half_life_years"]} years. Support is counted in distinct
@@ -246,6 +322,13 @@ each other is still only one idea. {plural(len(dropped), "video")} could not be
 fetched or had no usable captions.{unread_note} Quotes come from automatic
 captions, which mangle names and jargon.</p></details>
 {"".join(body)}
+<section id="sources"><div class="shead"><h2>Sources</h2>
+<span class="count">{plural(len(analysed), "video")} read of {len(corpus)} fetched</span></div>
+<p class="sdesc">Every video behind this report, newest first. Titles link to
+the video; the quotes above link to the exact moment each claim was made.
+Anything marked <em>not read</em> was fetched but never mined, and is excluded
+from the maths rather than counted as silence.</p>
+<ul class="srcs">{sources_html}</ul></section>
 <footer>consensus &middot; transcripts via yt-dlp &middot; no video downloaded &middot;
 every position traceable to a timestamped source</footer>
 </div></body></html>"""

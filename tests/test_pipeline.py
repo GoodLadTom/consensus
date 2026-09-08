@@ -157,6 +157,20 @@ def main_report(tmp, check):
     check("expired position named", "Upload every single day" in html)
     check("evidence deep-links to timestamp", "youtube.com/watch?v=old0&t=0s" in html)
     check("dropped videos disclosed", "1 video could not be fetched" in flat)
+    check("corpus strength stated up front", 'class="strength"' in html)
+    check("channel count stated",
+          bool(re.search(r"\d+ videos from \d+ channels, \d+ in the last "
+                         r"\d+ months and \d+ older", flat)))
+    check("detection floor explained",
+          "before its absence from recent videos can be called expired" in flat)
+    check("sources section credits every video", flat.count('class="srcs"') == 1)
+    check("every source is linked",
+          all(f'watch?v={v}' in html
+              for v in ("old0", "new0", "old19", "new19")))
+    check("source credits carry channel and date",
+          "ch_old0" in html and "20" in html)
+    check("unread sources marked, not passed off as silence",
+          "not read" in flat)
     check("singular channel count reads correctly", "1 channels" not in flat)
 
 

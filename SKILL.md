@@ -44,8 +44,8 @@ Optionally: `/consensus <topic> --videos 60 --recent-months 18`
 
 ## The standard: 100 transcripts, actually read
 
-The default corpus is **100 transcripts, every one of them read**. Not 100
-attempted, not 100 fetched and 60 mined. This is enforced rather than trusted:
+The target is **100 transcripts, every one of them read**. Not 100 attempted,
+not 100 fetched and 60 mined. This is enforced rather than trusted:
 
 1. Discovery gathers **140** candidates, because captions and rate limits take
    a cut of any list.
@@ -64,6 +64,13 @@ direction of inventing dead advice that was never dead.
 Cost, measured rather than estimated: 100 transcripts is about 362,000 tokens
 of source, roughly 36,000 per agent across ten parallel agents. Comfortable.
 The binding constraint is fetch time, not context.
+
+**When a topic cannot reach 100**, which happens on genuinely niche subjects,
+run with what exists rather than padding the corpus with loosely related
+videos to hit a number. The report states the corpus size, the channel count,
+the age split, and the minimum backing a position needed before `expired`
+could fire at all — so a reader can see how much weight the findings carry.
+Say the same thing in the chat, first, before any finding.
 
 ## Pipeline
 
@@ -99,11 +106,15 @@ a second run on a neighbouring topic re-fetches almost nothing.
    times is one opinion.
 3. **Every claim carries a quote and a timestamp.** A position nobody can
    check is not a finding.
-4. **Report what was dropped.** Videos without captions, and fetch failures,
-   are counted in the report. A corpus of 78 is fine; a corpus of 78 described
-   as 100 is not.
-5. **Transcripts only.** No comment sections.
-6. **What creators say is not what is true.** The report measures agreement,
+4. **Report what was dropped, and credit every source.** Videos without
+   captions and fetch failures are counted in the report. A corpus of 78 is
+   fine; a corpus of 78 described as 100 is not. Every video used is credited
+   by title, channel and date, linked so the reader can watch it.
+5. **Corpus size goes first, not in a footnote.** A small corpus does not
+   invalidate a run, but it changes what the run can claim. Say how big it was
+   before saying what it found.
+6. **Transcripts only.** No comment sections.
+7. **What creators say is not what is true.** The report measures agreement,
    not correctness, and says so.
 
 ## Known limits, state them in the summary

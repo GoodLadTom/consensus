@@ -78,6 +78,14 @@ Then in Claude Code:
 
 No video is ever downloaded. Only caption tracks, which are text.
 
+### Every source credited
+
+The report ends with a full source list: every video by title, channel, date
+and view count, the title linking to the video and every quote linking to the
+exact second the claim was made. Anything fetched but never read is marked
+`not read` rather than quietly counted as silence. You can go and watch any of
+it.
+
 ### 100 read, not 100 attempted
 
 The corpus is 100 transcripts and all 100 get read. That is enforced, not
@@ -90,6 +98,13 @@ whether a position's absence from recent videos is more than chance, and that
 test divides by how many videos were actually read. Quietly reading 60 of 100
 does not make the answer noisier — it makes it wrong, in the direction of
 inventing dead advice that was never dead.
+
+Some topics simply do not have 100 videos, and the tool runs on what exists
+rather than padding the corpus to hit a number. It then says so on its face:
+the report opens with how many videos and channels it rests on, the age split,
+and **the minimum backing a position needed before `expired` could fire at
+all** — so "no expired advice found" cannot be misread as "none exists" when
+it really means "none was detectable at this size".
 
 Measured cost: 100 transcripts is around 362,000 tokens of source, about
 36,000 per agent across ten parallel agents. The binding constraint is fetch

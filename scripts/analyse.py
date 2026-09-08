@@ -56,6 +56,44 @@ def decay(age, half_life_years):
     return 0.5 ** (age / half_life_years)
 
 
+def min_backing_for_expired(corpus_recent, corpus_old, alpha):
+    """Smallest number of older channels that could ever yield an 'expired'.
+
+    Absence is called real when exp(-expected) < alpha, so the position needs
+    expected = (k / corpus_old) * corpus_recent >= -ln(alpha). Reporting this
+    number tells a reader what the corpus was actually capable of detecting,
+    rather than leaving "no expired advice found" to be read as "none exists".
+    """
+    if not corpus_recent or not corpus_old:
+        return None
+    need = -math.log(alpha)
+    return math.ceil(need * corpus_old / corpus_recent)
+
+
+def assess(corpus_total, corpus_recent, corpus_old):
+    """Plain-language read on whether this corpus can support a consensus."""
+    if corpus_total < 15:
+        return ("weak", "Too small to describe as a consensus. Treat every "
+                        "position here as a handful of opinions rather than "
+                        "a settled view.")
+    if corpus_total < 40:
+        return ("limited", "Enough to see broad agreement, but not enough for "
+                           "confident claims about what the field has stopped "
+                           "saying.")
+    if min(corpus_recent, corpus_old) < 10:
+        thin = "recent" if corpus_recent < corpus_old else "older"
+        return ("lopsided", f"A reasonable corpus, but only "
+                            f"{min(corpus_recent, corpus_old)} {thin} videos. "
+                            f"The age comparison rests on a small side, so "
+                            f"expired and current verdicts are weaker than "
+                            f"the total suggests.")
+    if corpus_total < 70:
+        return ("fair", "A fair corpus. Strong positions are meaningful; "
+                        "single-channel positions are not.")
+    return ("strong", "A large enough corpus for agreement across many "
+                      "independent channels to mean something.")
+
+
 def classify(n_recent_ch, n_old_ch, corpus_recent, corpus_old,
              min_backing, alpha):
     """Return (label, p_absent) for a cluster's channel counts."""
@@ -212,6 +250,14 @@ def main():
         "alpha": a.alpha,
         "status_counts": dict(counts),
         "contradiction_pairs": [list(p) for p in sorted(pairs)],
+        "min_backing_for_expired": min_backing_for_expired(
+            corpus_recent, corpus_old, a.alpha),
+        "strength": assess(len(dated), corpus_recent, corpus_old)[0],
+        "strength_note": assess(len(dated), corpus_recent, corpus_old)[1],
+        "channels_total": len({v.get("channel") or v["id"]
+                               for v in corpus.values()}),
+        "analysed_ids": sorted(corpus),
+        "unread_ids": sorted(unread),
     }
     print(json.dumps(summary, indent=2))
     json.dump({"summary": summary, "clusters": out}, open(a.out, "w"), indent=2)

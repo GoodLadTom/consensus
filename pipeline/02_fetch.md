@@ -34,11 +34,18 @@ The script prints `corpus=N dropped=N dated=N`.
   off; wait and re-run, the cache keeps everything already fetched.
 - **`dated` well below `corpus`** — the age analysis weakens. Say so later.
 - **`SHORT:` in the output** — the candidate list ran out before 100
-  transcripts were in hand. Go back to Phase 0, add queries, and re-run. The
-  cache keeps everything already fetched, so the second run only pays for the
-  new videos.
-- **`corpus` under 30** — too thin for a consensus even to be attempted. Widen
-  the queries rather than reporting a consensus of twelve videos.
+  transcripts were in hand. Try **once** to fix it: go back to Phase 0, add
+  three or four genuinely different queries, and re-run. The cache keeps
+  everything already fetched, so the second pass only pays for new videos.
+
+  If it is still short after that, the topic simply does not have 100 videos
+  on YouTube. **Carry on with what you have.** Do not pad the corpus with
+  loosely related videos to hit a number — a consensus assembled from videos
+  that are not really about the topic is worse than a small honest one. Say
+  the corpus was short, and why, when you report back.
+- **`corpus` under 15** — below this the report will label itself as too small
+  to call a consensus, which is correct. Still worth running if the topic is
+  genuinely niche; just lead with that when you report back.
 
 Transcripts land in `cache/<id>.txt` as clean prose with a `[mm:ss]` marker
 every 30 seconds. Rolling-caption duplication is already stripped, which is
