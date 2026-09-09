@@ -27,14 +27,36 @@ cost and add nothing to the design decision.
 
 **Under ~800 claims:** one agent over the whole list.
 
-**Over ~800 claims:** shard by theme. Ask one cheap agent to read the claim
-texts and propose 5-8 broad domains (for a lead-generation corpus: cold email,
-cold calling, paid ads, SEO, referrals and partnerships, offers and pricing,
-content and organic). Split the claims by domain, then run one designer per
-domain **in parallel**, each producing positions only for its own claims.
-Finish with a single merge agent that sees only the position labels — never
-the claims — and collapses genuine cross-domain duplicates. The merge is
-cheap because it reads a few hundred labels rather than thousands of claims.
+**Over ~800 claims:** shard by theme.
+
+Ask one agent to read a sample of a few hundred claim texts and propose 10-14
+domains, each with the vocabulary that actually appears in those claims. Do
+not hand-write the domains yourself: a hand-written set for the lead-generation
+corpus left 36% of claims unrouted, because real claims say "coiling the
+spring" and "reply early to new forum threads" rather than the words you would
+think of. An agent reading actual claims picks those up.
+
+Then route deterministically — no model needed:
+
+```bash
+python3 scripts/shard_claims.py \
+  --claims "$RUN/claims.json" --domains "$RUN/domains.json" \
+  --out-dir "$RUN/shards"
+```
+
+It prints each shard's size, the share that matched nothing, and a sample of
+unrouted claims. **The largest shard is what the slowest designer reads, so
+that number is the one to drive down.** On the lead-generation corpus, twelve
+domains took the largest shard from 1,623 claims to 391 — the catch-all — and
+anything over about a quarter unrouted means the catch-all has just become the
+bottleneck you were trying to remove. Widen the domains the sample points at
+and run it again; it costs seconds.
+
+Then run one designer per shard **in parallel**, each producing positions only
+for its own claims. Finish with a single merge agent that sees only the
+position labels — never the claims — and collapses genuine cross-domain
+duplicates. The merge is cheap because it reads a few hundred labels rather
+than thousands of claims.
 
 Give each designer this contract:
 
