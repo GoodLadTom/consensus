@@ -58,6 +58,38 @@ position labels — never the claims — and collapses genuine cross-domain
 duplicates. The merge is cheap because it reads a few hundred labels rather
 than thousands of claims.
 
+**Tell each designer how many positions its shard should yield.** This is the
+one instruction that sharding cannot do without, and leaving it out was
+measured: fourteen designers left to their own judgement produced 900
+positions where a single designer over the same claims produced 220. A
+designer seeing only its own 150 claims splits hairs that do not matter at
+corpus scale, because nothing in its view says what level of detail the corpus
+can support.
+
+That matters more than it sounds. The report only calls a position a consensus
+when at least two independent channels back it, so a taxonomy four times too
+fine fragments the support and the whole report reads "not enough evidence".
+Faster and worse is not a trade worth making.
+
+Calibrated on the first full run, **about 7 claims per position** is right.
+Give each designer a target of `shard_size / 7`, with a band of roughly ±25%
+around it, and say explicitly that contradictions are exempt — two sides of a
+real disagreement are never merged to hit a number.
+
+**Expect designers to overshoot the target, and do not correct them for it.**
+Measured on three shards, the instruction cut 210 positions to 78, a 2.7x
+reduction, landing at 4.9 claims per position rather than the 7 asked for.
+All three designers gave the same unprompted reason: roughly eleven of their
+positions existed only as one half of a disagreement they were forbidden to
+merge. A domain where creators argue a lot genuinely needs more positions than
+one where they agree, because every disagreement costs two.
+
+That overshoot is a feature. The sharded designers surfaced far more
+contradictions than the single pass did, and Contested is one of the sections
+the report exists for. Do not tighten the target to chase 7 exactly — you
+would be buying tidiness by merging real disagreements, which is the one thing
+this pipeline must never do.
+
 Give each designer this contract:
 
 > Design the set of **positions** these claims fall into. You are producing
@@ -83,9 +115,33 @@ Give each designer this contract:
 >    a phrase on two positions sends claims to whichever listed it rather than
 >    whichever means it. Do not put "lifetime value" on three positions.
 > 4. Cover the whole space. Singletons are fine — they become the outliers.
-> 5. Let the material decide the count. Do not aim for a number.
+> 5. Aim for about `N` positions (your shard size divided by seven). Group at
+>    the level where several different creators would recognisably be making
+>    the same point, not where every nuance gets its own box. Rule 1 overrides
+>    this: never merge two sides of a disagreement to hit the number.
 
-## 4.2 Check the taxonomy before routing anything through it
+## 4.2 Merge the shards
+
+```bash
+python3 scripts/merge_taxonomy.py \
+  --shard-dir "$RUN/shards" --claims "$RUN/claims.json" \
+  --out "$RUN/taxonomy.json"
+```
+
+It combines the per-domain files, makes contradictions symmetric, drops
+cross-domain references that cannot resolve, and reports the two things worth
+a human eye:
+
+- **Granularity.** Claims per position against the target of 7. Too fine and
+  it tells you how many positions to aim for on a re-run; too coarse and the
+  positions have become topics.
+- **Cross-domain near-duplicate labels.** Designers cannot see each other, so
+  two can land on the same idea from different angles. Send only those pairs —
+  labels and descriptions, never the claims — to one merge agent. That is what
+  keeps the merge cheap. On the live run there were none, which is the
+  sharding working.
+
+## 4.3 Check the taxonomy before routing anything through it
 
 ```bash
 python3 scripts/check_taxonomy.py --taxonomy "$RUN/taxonomy.json"
@@ -100,7 +156,7 @@ Measured on the first live run: 55 colliding keywords of 1,980 distinct
 the level to accept. Fix collisions on the positions the assignment agents
 later name as weak; do not chase every one.
 
-## 4.3 Assign claims to the fixed taxonomy
+## 4.4 Assign claims to the fixed taxonomy
 
 Split the claims into batches of about 200 and run one agent each, in
 parallel. They may **not** invent positions.
@@ -122,7 +178,7 @@ Ask each agent to report which positions it found ambiguous or overlapping.
 That feedback is the cheapest source of taxonomy repairs you will get, and it
 comes from agents that have just read 200 real claims against it.
 
-## 4.4 Merge and check
+## 4.5 Merge and check
 
 ```bash
 python3 scripts/merge_clusters.py \

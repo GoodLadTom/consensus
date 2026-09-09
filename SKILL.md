@@ -5,7 +5,7 @@ description: Find out what YouTube actually agrees on about a topic, and what it
 
 # consensus
 
-**v0.1.0**
+**v0.2.0**
 
 Give it a topic. It reads about a hundred YouTube videos on that topic and
 tells you what the field agrees on — separating advice that has held up from
@@ -72,16 +72,20 @@ Timings from the first complete run — 105 videos, 71 channels, 1,623 claims:
 | Scoping + discovery | 1 min | 270 candidates down to 140 |
 | Fetch | 18 min | rate-limit paced, unavoidable |
 | Extraction | 14 min | 11 agents in parallel |
-| **Taxonomy design** | **30 min** | **one agent — 42% of the run** |
+| **Taxonomy design** | **8 min** | **14 agents in parallel (was 30 min on one)** |
 | Assignment | 10 min | 8 agents in parallel |
 | Analysis + report | seconds | deterministic |
-| **Total** | **72 min** | |
+| **Total** | **~50 min** | 72 before the taxonomy pass was sharded |
 
-Two things follow. Context is never the constraint — 100 transcripts is about
-362,000 tokens of source, roughly 36,000 per agent across ten agents. And the
-single-agent taxonomy pass is the bottleneck by a wide margin, taking longer
-than fetching 105 videos over a throttled connection. Shard it above ~800
-claims; `pipeline/04_clustering.md` says how.
+Context is never the constraint — 100 transcripts is about 362,000 tokens of
+source, roughly 36,000 per agent across ten agents. Fetch time is now the
+largest single cost and cannot be reduced: YouTube rate-limits captions per IP,
+and going faster just gets you blocked.
+
+The taxonomy pass used to be the bottleneck at 30 minutes on one agent.
+Sharded across 14 it measured 7.6 minutes, a 4.0x speedup, with no
+cross-domain duplicate positions. `pipeline/04_clustering.md` has the method,
+including the granularity instruction it does not work without.
 
 **When a topic cannot reach 100**, which happens on genuinely niche subjects,
 run with what exists rather than padding the corpus with loosely related

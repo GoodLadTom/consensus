@@ -1,5 +1,56 @@
 # Changelog
 
+## 0.2.0 — 2026-09-09
+
+Sharded the taxonomy pass, the pipeline's one serial stage. **Measured 4.0x:
+7.6 minutes across 14 designers against 30.3 on one**, with zero cross-domain
+duplicate positions and keyword collisions down from 2.8% to 0.3%. A full run
+goes from 72 minutes to roughly 50, and fetch time is now the largest cost.
+
+### The instruction sharding does not work without
+
+Fourteen designers left to their own judgement produced **900 positions where
+one designer over the same claims produced 220** — four times too fine. A
+designer seeing only its own 150 claims splits hairs that do not matter at
+corpus scale, because nothing in its view says what detail the corpus can
+support. The report only calls a position a consensus when two independent
+channels back it, so a taxonomy that fine fragments support and the whole
+report reads "not enough evidence". Faster and worse is not a trade worth
+making.
+
+Giving each designer an explicit target of `shard_size / 7` cut 210 positions
+to 78 across three tested shards, a 2.7x reduction, landing at 4.9 claims per
+position. `merge_taxonomy.py` now measures this and says what to re-run with.
+
+### Designers overshoot the target, and should
+
+All three tested designers independently gave the same reason for exceeding
+their target: about eleven of their positions existed only as one half of a
+disagreement they were forbidden to merge. A domain where creators argue needs
+more positions than one where they agree, because every disagreement costs
+two. The sharded pass surfaced far more contradictions than the single pass
+did. The guidance says not to chase the target exactly — tidiness bought by
+merging real disagreements is the one thing this pipeline must never do.
+
+### Added
+
+- `shard_claims.py` — deterministic keyword routing of claims into domains
+- `merge_taxonomy.py` — merges per-domain taxonomies, makes contradictions
+  symmetric, and reports granularity plus cross-domain near-duplicate labels
+- `make_batches.py`, `merge_claims.py`, `merge_clusters.py` — the three stages
+  that previously ran on improvised shell, each verified to reproduce the
+  first full run's output exactly
+- `check_taxonomy.py` — keyword collision and contradiction hygiene, run
+  before any claim is routed
+
+### Also
+
+- Report order is settled, expired, current, then contested. What to do and
+  what to stop doing come before where the field is still arguing.
+- Claim texts do not deduplicate — 1,623 of 1,623 are distinct, because
+  extraction agents write them in their own words. Compressing the designer's
+  input that way does not work; sharding is the only lever.
+
 ## 0.1.0 — 2026-09-09
 
 First public release. One complete run behind it: 105 transcripts, 71

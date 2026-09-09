@@ -136,13 +136,17 @@ minutes end to end:
 | Scoping + discovery | 1 min |
 | Fetch | 18 min |
 | Extraction (11 agents in parallel) | 14 min |
-| Taxonomy design (one agent) | 30 min |
+| Taxonomy design (14 agents in parallel) | 8 min |
 | Assignment (8 agents in parallel) | 10 min |
 | Analysis + report | seconds |
 
-Context is never the constraint. The single-agent taxonomy pass is, at 42% of
-the run — longer than fetching 105 videos over a throttled connection. It
-shards by theme above ~800 claims.
+Context is never the constraint. Fetch time is now the largest single cost and
+cannot be reduced — YouTube rate-limits captions per IP and going faster just
+gets you blocked.
+
+Designing the positions used to take 30 minutes on one agent, 42% of the run.
+Sharded across 14 it measures 7.6, a 4.0x speedup with no cross-domain
+duplicate positions.
 
 ## Notes from building it
 
