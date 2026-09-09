@@ -33,9 +33,16 @@ endorsing.
 
 ## How to run it
 
-Batch the corpus into groups of about 10 videos and spawn one subagent per
-batch, in parallel, in a single message. For each video the agent reads
-`cache/<id>.txt` and returns claims.
+Build the batches first — balanced by transcript length, so no agent draws
+all the long videos and holds up the stage:
+
+```bash
+python3 scripts/make_batches.py \
+  --corpus "$RUN/corpus.json" --out-dir "$RUN/batches" --batches 11
+```
+
+Then spawn one subagent per batch, in parallel, in a single message. Each
+agent reads its batch file, then each video's transcript, and returns claims.
 
 Read those files with the Read tool, not `cat`. YouTube video ids can start
 with a hyphen (`-fS8na576Jc`), which shell tools read as a flag and choke on.
@@ -65,7 +72,16 @@ Give every agent this contract:
 > instead of straining for claims. Never invent a quote: if you cannot find
 > the words in the transcript, drop the claim.
 
-Merge the agent outputs into:
+Merge with:
+
+```bash
+python3 scripts/merge_claims.py \
+  --batch-dir "$RUN/batches" --corpus "$RUN/corpus.json" \
+  --out "$RUN/claims.json"
+```
+
+It names any corpus video no agent reported on, and exits non-zero if a batch
+came back malformed or a claim id is duplicated. The merged file is:
 
 ```json
 {"claims": [{"id": "...", "video_id": "...", "text": "...", "quote": "...", "t": "03:12", "type": "tactic"}],

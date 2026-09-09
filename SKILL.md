@@ -5,6 +5,8 @@ description: Find out what YouTube actually agrees on about a topic, and what it
 
 # consensus
 
+**v0.1.0**
+
 Give it a topic. It reads about a hundred YouTube videos on that topic and
 tells you what the field agrees on — separating advice that has held up from
 advice that has quietly died.

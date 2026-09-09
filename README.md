@@ -4,11 +4,16 @@ A Claude Code skill that reads about a hundred YouTube videos on a topic and
 tells you what the field agrees on — and what it has quietly stopped saying.
 
 ```
-/consensus how to grow on youtube
+/consensus how do I get more leads for my business
 ```
 
-Ten minutes later you get a self-contained HTML report where every position is
-traceable to a timestamped source.
+About an hour later you get a self-contained HTML report where every position
+is traceable to a timestamped source, and every video is credited and linked.
+
+**[See a real run →](examples/lead-generation/)** — 105 transcripts, 71
+channels, 1,623 claims, every quote verified. That one found that "pick one
+lead channel and go all in" has quietly died, while its opposite — stack
+several channels on the same prospect — is backed by 11 independent channels.
 
 ## The problem it solves
 
@@ -168,6 +173,23 @@ same afternoon:
   test now runs only over the one bucket that spans both periods. This is the
   kind of bug that produces confident, plausible, wrong findings, which is the
   worst kind.
+
+## Status
+
+**v0.1.0.** One complete run behind it, on the topic in `examples/`. That run
+found two real bugs in the analysis, both fixed and covered by tests, and it
+is the reason the version does not start with a 1: the method is sound and the
+pipeline is reproducible, but it has been proven on one topic, not ten.
+
+Known gaps, in the order they are worth closing:
+
+- The taxonomy design pass is a single agent and 42% of the run. Sharding it
+  by theme is documented in `pipeline/04_clustering.md` but not yet exercised.
+- Extraction agents report ambiguity in prose. It should be structured data
+  the pipeline can aggregate rather than something a human reads across
+  eleven summaries.
+- Unassigned claims are dropped. When they cluster around a theme they are
+  naming a gap in the taxonomy and should feed a second design pass.
 
 ## Licence
 

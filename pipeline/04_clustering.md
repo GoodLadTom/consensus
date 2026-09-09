@@ -102,9 +102,13 @@ comes from agents that have just read 200 real claims against it.
 
 ## 4.4 Merge and check
 
-Merge the mappings, drop `unassigned`, and build `clusters.json` with
-`id`, `label`, `description`, `contradicts` and `claim_ids`.
+```bash
+python3 scripts/merge_clusters.py \
+  --claims "$RUN/claims.json" --taxonomy "$RUN/taxonomy.json" \
+  --batch-dir "$RUN/batches" --out "$RUN/clusters.json"
+```
 
+It exits non-zero and tells you what to do when any of the following is true.
 Verify before moving on:
 
 - **Every claim mapped exactly once**, and every value a real position id.

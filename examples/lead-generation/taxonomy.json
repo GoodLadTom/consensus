@@ -1,0 +1,4062 @@
+{
+ "clusters": [
+  {
+   "id": "one-channel-focus",
+   "label": "Pick one lead channel and go all in rather than running several at once",
+   "description": "Effort spread across many channels stops any of them working; commit to a single channel until it produces before adding a second. Supporters differ on whether the limit is one channel or two or three shortlisted ones.",
+   "keywords": [
+    "one channel",
+    "go all in",
+    "pick one",
+    "don't spread thin",
+    "master one",
+    "single channel",
+    "focus",
+    "only expand once profitable",
+    "three to five shortlist",
+    "attention is finite",
+    "stop adding channels"
+   ],
+   "contradicts": [
+    "stack-multiple-channels"
+   ]
+  },
+  {
+   "id": "stack-multiple-channels",
+   "label": "Run several channels at once and stack them on the same prospect",
+   "description": "More touchpoints across email, phone, LinkedIn, SMS and social raise the chance of a conversation, and different prospects respond on different channels. Some say a primary plus a secondary channel, others say stack everything on one list.",
+   "keywords": [
+    "multichannel",
+    "omnichannel",
+    "overlap channels",
+    "stack channels",
+    "touchpoints",
+    "email plus LinkedIn",
+    "phone and email",
+    "second channel",
+    "cannot miss you",
+    "at least two channels",
+    "different prospects respond differently"
+   ],
+   "contradicts": [
+    "multichannel-sequencing-overrated",
+    "one-channel-focus"
+   ]
+  },
+  {
+   "id": "multichannel-sequencing-overrated",
+   "label": "Carefully threaded multichannel sequences lift response only marginally and are not worth the tooling",
+   "description": "Multichannel works because different people prefer different channels, not because touches accumulate on one person, so run one channel to exhaustion then start the next rather than interleaving per prospect.",
+   "keywords": [
+    "not worth the effort",
+    "marginal lift",
+    "run one channel to exhaustion",
+    "don't interleave",
+    "sequencing overhead",
+    "tooling cost",
+    "touches don't accumulate"
+   ],
+   "contradicts": [
+    "stack-multiple-channels"
+   ]
+  },
+  {
+   "id": "persist-with-a-channel",
+   "label": "Persist with the channel you have and do more of what already works, rather than adding new ones",
+   "description": "Nearly any channel works if you stay with it long enough, quitting early permanently removes it as a source, and a thin pipeline is usually a focus problem rather than a volume problem. Time-to-judge estimates range from two to three months up to eighteen months for paid media.",
+   "keywords": [
+    "give it time",
+    "don't quit",
+    "persist",
+    "commit for months",
+    "two to three months",
+    "a year and a half",
+    "channel is not dead",
+    "quitting early",
+    "stick with it",
+    "month four",
+    "do more of what works",
+    "double down",
+    "70/20/10",
+    "copy what works",
+    "highest risk-adjusted",
+    "focus problem not volume problem",
+    "scale the channel that is producing",
+    "don't add new"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "volume-beats-refinement",
+   "label": "Raising outreach volume beats optimising conversion rates",
+   "description": "Optimisation is capped at 100% while reach is not, volatile results usually mean too little volume, and complaints that outreach does not work usually trace to sending far too little. Scaling means multiplying the same activity.",
+   "keywords": [
+    "more volume",
+    "double your outreach",
+    "scale volume",
+    "not enough volume",
+    "reach is uncapped",
+    "thousands not hundreds",
+    "test with thousands",
+    "volume substitutes for skill",
+    "sample size too small"
+   ],
+   "contradicts": [
+    "low-volume-deep-research",
+    "templated-mass-outreach-is-dead"
+   ]
+  },
+  {
+   "id": "low-volume-deep-research",
+   "label": "A small number of heavily researched approaches beats high-volume outreach",
+   "description": "Twenty deeply researched emails a week, or a small dream-100 account list worked across every stakeholder, outperforms mass sending. Supporters accept this cannot be automated.",
+   "keywords": [
+    "20 a week",
+    "heavily researched",
+    "dream 100",
+    "quality over quantity",
+    "fewer better targeted",
+    "minutes of research per lead",
+    "hand-picked accounts",
+    "unscalable"
+   ],
+   "contradicts": [
+    "cheap-volume-scraping-still-pays",
+    "send-high-daily-volume",
+    "volume-beats-refinement"
+   ]
+  },
+  {
+   "id": "cold-outreach-is-the-fastest-start",
+   "label": "With no audience, case studies or budget, cold outreach is the fastest way to get first clients",
+   "description": "Cold outbound is a poor long-term channel but the quickest available from a standing start; switch to paid acquisition once there is cash to reinvest.",
+   "keywords": [
+    "fastest way to start",
+    "no audience",
+    "beginner",
+    "until you have capital",
+    "first ten clients",
+    "start cold then move to ads",
+    "quickest route to a client"
+   ],
+   "contradicts": [
+    "organic-social-over-cold-outbound"
+   ]
+  },
+  {
+   "id": "warm-network-first",
+   "label": "Work your existing contacts first, and ask them who they know rather than pitching them",
+   "description": "The first lead list is the email contacts, followers and phone contacts you already own, worked one by one. Asking whether they know anyone who needs this reads as a favour rather than a sale, gives access to a filtered network and removes the awkwardness of messaging friends; some prefer asking a mutual connection for a formal introduction.",
+   "keywords": [
+    "warm outreach",
+    "phone contacts",
+    "people you already know",
+    "list 100 people",
+    "your own followers",
+    "existing network",
+    "message your followers",
+    "warm list first",
+    "do you know anyone",
+    "referral ask",
+    "introduction",
+    "reads as a favour",
+    "filtered network",
+    "mutual connection intro",
+    "who do you hate"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "referrals-are-the-best-channel",
+   "label": "Word of mouth is the most profitable source of business, but only if you engineer it deliberately",
+   "description": "Organic sources — referrals, repeat business and reputation — carry the largest share of revenue and convert best because trust arrives before the first conversation. Supporters insist it must be engineered: set the expectation at the start of the engagement, describe the exact client you want rather than asking vaguely, ask at the moment of delivered value, offer a choice of referral, review or testimonial, and formally thank whoever sends one. Some ask for names and permission rather than for an introduction.",
+   "keywords": [
+    "word of mouth",
+    "referrals",
+    "repeat business",
+    "most profitable channel",
+    "40% of revenue",
+    "trust transfers",
+    "referred leads convert",
+    "reputation",
+    "ask for referrals",
+    "referral system",
+    "set the expectation",
+    "describe the client you want",
+    "thank the referrer",
+    "referral programme",
+    "ask at the moment of value",
+    "give referrals first",
+    "who do you know"
+   ],
+   "contradicts": [
+    "referrals-are-slow-and-passive"
+   ]
+  },
+  {
+   "id": "referrals-are-slow-and-passive",
+   "label": "Referrals are a passive, slow-burn channel that cannot be relied on for pipeline",
+   "description": "The best referrals take years of relationship-building, referral quality tracks the referrer's credibility, and word of mouth is declining relative to search, so referrals must be supplemented by an active channel.",
+   "keywords": [
+    "passive channel",
+    "five to seven years",
+    "declining",
+    "cannot rely on referrals",
+    "strategic alliances",
+    "visibility plan",
+    "word of mouth is declining"
+   ],
+   "contradicts": [
+    "referrals-are-the-best-channel"
+   ]
+  },
+  {
+   "id": "inbound-beats-outbound",
+   "label": "Inbound leads are better than outbound because they arrive educated, interested and pre-vetted",
+   "description": "People who found you and chose to make contact convert better than anyone you interrupted.",
+   "keywords": [
+    "inbound is better",
+    "already educated",
+    "found you first",
+    "vetted you",
+    "high intent",
+    "they called you",
+    "pull not push"
+   ],
+   "contradicts": [
+    "outbound-beats-inbound"
+   ]
+  },
+  {
+   "id": "outbound-beats-inbound",
+   "label": "Outbound is preferable because you choose who you approach; inbound gives no control over fit",
+   "description": "Outbound lets you select the exact accounts and buyers you want, whereas inbound delivers whoever happens to arrive.",
+   "keywords": [
+    "outbound is better",
+    "you choose",
+    "control over fit",
+    "inbound gives no control",
+    "pick your accounts"
+   ],
+   "contradicts": [
+    "inbound-beats-outbound"
+   ]
+  },
+  {
+   "id": "lead-gen-is-the-binding-constraint",
+   "label": "Lead generation is the binding constraint — unless the business cannot deliver more work",
+   "description": "If there is spare delivery capacity, lead flow is what everything else depends on and it should be the first activity of the day. The stated exception is a supply-constrained business, where more marketing spend is waste and volume should not be promised beyond what can be delivered.",
+   "keywords": [
+    "constraint",
+    "bottleneck",
+    "lead gen first",
+    "spare capacity",
+    "advertise first four hours",
+    "most important activity",
+    "supply constrained",
+    "capacity",
+    "cannot deliver",
+    "check capacity first",
+    "don't promise more work than they can handle",
+    "delivery bottleneck"
+   ],
+   "contradicts": [
+    "the-offer-not-the-leads-is-the-constraint"
+   ]
+  },
+  {
+   "id": "the-offer-not-the-leads-is-the-constraint",
+   "label": "Expensive or scarce leads are almost never the real problem; the offer and revenue per customer are",
+   "description": "No channel works behind a weak offer, and low lifetime value rather than lead cost is what makes acquisition unaffordable. Fix pricing, packaging and the offer before spending more on lead generation.",
+   "keywords": [
+    "weak offer",
+    "offer is the problem",
+    "revenue per customer",
+    "lifetime value",
+    "fix pricing first",
+    "the ads matter less than the offer",
+    "offer beats targeting"
+   ],
+   "contradicts": [
+    "lead-gen-is-the-binding-constraint"
+   ]
+  },
+  {
+   "id": "niche-down",
+   "label": "Choose one narrow market, and one that is able and willing to spend",
+   "description": "Expertise in a single vertical outperforms being spread across many, makes prospecting methods work, and is credited with large revenue jumps. The market must also be able to pay: startups, solo operators and low-lifetime-value categories are named as choosing clients with no money. Thresholds cited disagree — a minimum client revenue, a minimum lifetime value, a minimum lead value, and company headcount bands from two to ten employees up to 51-200.",
+   "keywords": [
+    "niche down",
+    "one vertical",
+    "specialise",
+    "pick a niche",
+    "one industry",
+    "narrow",
+    "specific expertise",
+    "stop serving everyone",
+    "able to pay",
+    "avoid startups",
+    "lifetime value",
+    "$20,000 a month revenue",
+    "lead worth $100",
+    "high ticket",
+    "2 to 10 employees",
+    "51-200 employees",
+    "too small to pay",
+    "headcount as a proxy"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "positioning-clarity-beats-tactics",
+   "label": "Failure to win clients is a clarity and positioning problem, not a tactics problem",
+   "description": "A prospect must grasp who you help, what problem you solve and how your method differs; when positioning is clear the channel barely matters. Specific positioning also makes you referable. The same specificity should repel — state who you are not for, and remove case studies describing work you no longer want, so unqualified leads self-select out.",
+   "keywords": [
+    "positioning",
+    "clarity",
+    "not a tactics problem",
+    "who you help",
+    "I help X with Y",
+    "message not the channel",
+    "indistinguishable",
+    "I help businesses grow is too broad",
+    "who you are not for",
+    "repel",
+    "self-select out",
+    "not a fit",
+    "remove old case studies",
+    "filter in the copy",
+    "disqualify"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "name-your-own-method",
+   "label": "Name and own a differentiated method so buyers stop comparing you on price",
+   "description": "A named framework built from the steps you already walk clients through removes like-for-like comparison; it does not have to be original, only named and owned. Some extend this to giving the offer itself a branded name.",
+   "keywords": [
+    "named framework",
+    "proprietary method",
+    "branded offer name",
+    "your process",
+    "removes comparison",
+    "competing on price",
+    "three to seven steps",
+    "give it a name"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "sell-the-outcome-not-the-deliverable",
+   "label": "Market the result the buyer gets, ideally priced in money, never the service or mechanism",
+   "description": "Buyers want the transformation, not sessions, reports, features or the technical build, and features must be tied to a stated benefit because prospects will not make the connection themselves. The strongest version puts a monetary figure on it — a per-unit saving multiplied into an annual number, a percentage of funds raised, or the profit value of the jobs a retainer will generate.",
+   "keywords": [
+    "sell the outcome",
+    "transformation",
+    "not the deliverable",
+    "not the mechanism",
+    "benefit not feature",
+    "life after the work",
+    "they don't care about the tooling",
+    "end result",
+    "appointments not websites",
+    "put a number on it",
+    "quantify",
+    "money value",
+    "percentage of what they raise",
+    "cost per job",
+    "profit value",
+    "annual saving",
+    "price against value"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "lead-with-the-pain",
+   "label": "Lead with the problem and the cost of inaction rather than the benefit or your solution",
+   "description": "Problem-led messaging beats benefit-led because losses are felt more intensely than equivalent gains; articulating the pain better than the buyer can positions you as the expert. Make them feel what doing nothing costs and ask directly why they cannot just do nothing. Low prices and hard sales are treated as a symptom of insufficient felt pain rather than poor work.",
+   "keywords": [
+    "pain point",
+    "problem-led",
+    "problem proposition not value proposition",
+    "articulate their pain",
+    "loss aversion",
+    "name the frustration",
+    "the challenge you solve",
+    "cost of doing nothing",
+    "cost of inaction",
+    "why can't you do nothing",
+    "felt pain",
+    "degree of pain",
+    "discounting is a symptom",
+    "problem seeker"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "define-the-icp-first",
+   "label": "Define the ideal customer profile before prospecting, and keep refining it from who actually replies",
+   "description": "The hard part is finding the right leads, not leads. Criteria set too broad make the list irrelevant, too narrow collapse the market, and contacting everyone tanks reply rates. Supporters disagree on the basis: some use firmographics, others insist behaviour and motivation beat job title, size and industry. Several rebuild lists around the shared traits of positive responders, one citing a move from 3% to 10% reply.",
+   "keywords": [
+    "ideal customer profile",
+    "ICP",
+    "lead criteria",
+    "qualify first",
+    "not everyone is a customer",
+    "too broad",
+    "segment properly",
+    "who visibly has the problem",
+    "behaviour not firmographics",
+    "motivation",
+    "not job title",
+    "same title different buyer",
+    "broad filters fail",
+    "behavioural segmentation",
+    "responder traits",
+    "who replied",
+    "iterate the list",
+    "shared attributes",
+    "3% to 10%",
+    "learn from replies",
+    "refine the ICP from data"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "prospect-close-to-home",
+   "label": "Prospect businesses local to you, because proximity builds trust and closes faster",
+   "description": "Nearby prospects sign more readily, in-person meetings raise close rates, and local references lift reply rates. Some extend this to buying a local-area phone number.",
+   "keywords": [
+    "local",
+    "proximity",
+    "near you",
+    "your own city",
+    "local trust",
+    "same time zone",
+    "in person",
+    "local reference",
+    "start local then expand"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "list-quality-decides-the-campaign",
+   "label": "List quality decides the campaign, so build the whole list deliberately and in advance",
+   "description": "A badly filtered list is the single biggest cause of failure and everything downstream is determined by it; volume poured into a dead list is wasted. Build the list in batched sittings ahead of outreach — 'coiling the spring' — rather than choosing targets day by day, which is cited as raising throughput from ten emails a day to a hundred in an hour.",
+   "keywords": [
+    "list quality",
+    "bad list",
+    "garbage list",
+    "list before copy",
+    "targeting is the first fix",
+    "dead list",
+    "quality over quantity of list",
+    "list is everything",
+    "coiling the spring",
+    "build the list in one sitting",
+    "batch",
+    "200 to 500 leads first",
+    "never alternate",
+    "pre-built segment lists",
+    "ten a day to a hundred an hour"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "hand-built-lists-beat-databases",
+   "label": "Manually gathered lists beat software-generated ones because the data is current and untouched",
+   "description": "Prebuilt databases hold stale records and serve the same over-solicited contacts to every competitor; the advantage lies in the prospects the tools could not resolve. Some pay freelancers to build lists by hand.",
+   "keywords": [
+    "manual scraping",
+    "hand built",
+    "stale data",
+    "outdated database",
+    "everyone uses the same list",
+    "over-solicited",
+    "untouched prospects",
+    "freelancer built list",
+    "avoid prebuilt tools"
+   ],
+   "contradicts": [
+    "lead-databases-work-with-the-right-filters"
+   ]
+  },
+  {
+   "id": "lead-databases-work-with-the-right-filters",
+   "label": "Lead databases work well provided you use the right filters",
+   "description": "Filter by keyword rather than industry taxonomy, by management level and department rather than free-text titles, by headcount, geography and tenure; build and preview lists before spending credits and exclude previously exported contacts.",
+   "keywords": [
+    "Apollo",
+    "Sales Navigator",
+    "filters",
+    "keyword not industry",
+    "management level and department",
+    "saved persona filter",
+    "exclude exported lists",
+    "credits on export",
+    "2,000 to 2,500 prospects"
+   ],
+   "contradicts": [
+    "hand-built-lists-beat-databases"
+   ]
+  },
+  {
+   "id": "free-scraping-replaces-paid-tools",
+   "label": "Free sources — search operators, maps, niche directories and associations — replace paid lead databases",
+   "description": "A search query combining a niche term, a site restriction and a public email domain, or a browser map scraper, produces a usable list at no cost; paste the raw results into an AI model to structure them. Vertical directories and membership bodies are separately named as the strongest and most overlooked source because the filtering is already done.",
+   "keywords": [
+    "site: search",
+    "Google operators",
+    "free lead list",
+    "Google Maps scraper",
+    "browser extension",
+    "paste into ChatGPT",
+    "format into CSV",
+    "directory listings",
+    "no paid tool needed",
+    "1,000 leads a month free",
+    "industry directory",
+    "trade association",
+    "niche database",
+    "already filtered",
+    "overlooked",
+    "vertical directory",
+    "membership list"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "bought-lists-are-stale",
+   "label": "Bought or marketplace lists perform far worse than freshly scraped ones",
+   "description": "Marketplace data is old and already worked; one estimate puts bought lists at half the performance of fresh scrapes.",
+   "keywords": [
+    "bought list",
+    "data marketplace",
+    "minimum order",
+    "stale",
+    "half as well",
+    "already contacted",
+    "resold data"
+   ],
+   "contradicts": [
+    "cheap-volume-scraping-still-pays"
+   ]
+  },
+  {
+   "id": "cheap-volume-scraping-still-pays",
+   "label": "Lower-quality high-volume data is still worth buying because the marginal cost of sending is near zero",
+   "description": "Once sending infrastructure exists, an imperfect record costs almost nothing to try, and the opportunity cost of not sending today outweighs paying more per lead. Enrichment hit rates of 20-40% are treated as acceptable.",
+   "keywords": [
+    "marginal cost near zero",
+    "20-30% enrichment",
+    "worth it anyway",
+    "opportunity cost of not sending",
+    "cheap records",
+    "in-platform leads",
+    "$3 per 1,000"
+   ],
+   "contradicts": [
+    "bought-lists-are-stale",
+    "low-volume-deep-research"
+   ]
+  },
+  {
+   "id": "verify-every-email",
+   "label": "Clean the list before you touch it: verified addresses, named decision makers, direct numbers",
+   "description": "Bounces damage domain reputation and get senders blacklisted, database 'verified' labels are unreliable, and a large share of any scraped list fails verification; some say a cheap freelancer checking by hand beats automated verifiers. A record with no named decision maker is not worth contacting, and filtering to mobile or direct lines rather than switchboards is cited at roughly five times the decision-maker contact rate.",
+   "keywords": [
+    "email verification",
+    "bounce rate",
+    "verifier",
+    "re-verify",
+    "verified label is unreliable",
+    "blacklisted",
+    "domain reputation",
+    "73% accuracy",
+    "100,000 down to 60,000",
+    "decision maker name",
+    "owner's name",
+    "no name no contact",
+    "gatekeeper",
+    "first name only",
+    "not worth approaching",
+    "mobile number",
+    "direct dial",
+    "switchboard",
+    "head office line",
+    "reaches the owner",
+    "five times",
+    "30 to 50 cents per number"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "outsource-list-building",
+   "label": "Outsource lead list building as soon as you can afford to",
+   "description": "The owner's time is worth more on sales and delivery; freelancers recover records software could not resolve at a few cents to tens of cents each, and lead generation should be the first task delegated.",
+   "keywords": [
+    "outsource",
+    "freelancer",
+    "virtual assistant",
+    "5 to 30 cents per lead",
+    "£13 per 100 leads",
+    "first thing to outsource",
+    "manual lead gen service"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "trigger-events-and-buying-signals",
+   "label": "Trigger outreach off an observed signal rather than a static filter",
+   "description": "Signals cited include job changes and promotions, hiring for the role your service replaces, funding, headcount jumps, competitor software in use, and people engaging with your own, a competitor's or an adjacent creator's posts. Newly appointed executives need early wins and are more open; timing windows range from the first month to 90 days. Social engagement was named the best-performing outbound trigger of one year, and one creator says referencing a recent post beat firmographic triggers contrary to expectation.",
+   "keywords": [
+    "trigger event",
+    "job change",
+    "newly promoted",
+    "new role",
+    "less than 90 days",
+    "hiring signal",
+    "job posting",
+    "funding",
+    "headcount growth 33%",
+    "buying signal",
+    "reason for contact",
+    "engagers",
+    "liked or commented",
+    "scrape post engagement",
+    "competitor's audience",
+    "warm signal",
+    "profile views",
+    "event attendees",
+    "group members",
+    "recent LinkedIn post"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "target-a-visible-fixable-problem",
+   "label": "Only contact businesses that visibly have the problem you solve",
+   "description": "Find the measurable defect first — no website, bad reviews, an unoptimised listing, a stale site — and build the list from that, instead of blasting a cold list nobody has a reason to answer.",
+   "keywords": [
+    "visible problem",
+    "no website",
+    "bad reviews",
+    "low star rating",
+    "evidence first",
+    "measurable problem",
+    "businesses with a gap",
+    "reason to respond"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "rework-old-and-lost-leads",
+   "label": "Leads already marked lost, quiet or previously spoken to are the easiest pipeline available",
+   "description": "Keep a saved list of everyone you had a good conversation with, re-check it for job changes, revive stalled prospects by naming the silence, and run campaigns against the client's own past-customer database.",
+   "keywords": [
+    "lost leads",
+    "never followed up",
+    "stalled prospect",
+    "reactivate database",
+    "past customers",
+    "second choice vendor",
+    "went quiet",
+    "reconnect months out",
+    "10-20% of past customers"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "cold-email-still-works-with-setup",
+   "label": "Cold email still works, but only with correct sending infrastructure, targeting and reply handling",
+   "description": "The channel is not dead; failures trace to setup, list and follow-through rather than the medium. Held against claims that inboxes are saturated.",
+   "keywords": [
+    "cold email still works",
+    "not dead",
+    "setup matters",
+    "infrastructure",
+    "volume alone is not enough",
+    "reply handling"
+   ],
+   "contradicts": [
+    "templated-mass-outreach-is-dead"
+   ]
+  },
+  {
+   "id": "many-inboxes-low-volume-each",
+   "label": "Protect deliverability by spreading sending across many warmed inboxes at low volume each",
+   "description": "Scale horizontally rather than sending hard from one address: lookalike domains, cheap inbox providers, roughly 30-50 sends per inbox per day, and a two-week warm-up at around five a day before any cold email goes out. Some drip at one email an hour. Volume figures disagree, from 30 a day per account up to 500 per domain, as do costs, from three domains and fifteen inboxes for a beginner to $1,400 a month for 7,000 daily sends.",
+   "keywords": [
+    "multiple domains",
+    "secondary domains",
+    "lookalike domain",
+    "inboxes",
+    "30 emails per inbox",
+    "scale horizontally",
+    "burn the domain",
+    "Outlook cheaper",
+    "500 a day per domain",
+    ".info domains",
+    "sending infrastructure cost",
+    "warm up",
+    "warmup",
+    "two weeks",
+    "five emails a day",
+    "new domain",
+    "deliverability warm-up",
+    "before sending",
+    "one email per hour",
+    "drip",
+    "don't blast",
+    "spam threshold",
+    "30-40 a day per account",
+    "flagged as spam",
+    "stagger sending"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "send-high-daily-volume",
+   "label": "Send at least a hundred, and preferably a thousand or more, outreach messages a day",
+   "description": "Only high daily volume produces enough data to judge what works; counts cited include 75 per channel per day, 100 a day counting follow-ups, 500 new leads a day and 1,000+ emails a day. Some cap by platform limits rather than ambition.",
+   "keywords": [
+    "100 emails a day",
+    "1,000 a day",
+    "75 per day",
+    "500 leads a day",
+    "volume",
+    "daily quota",
+    "enough data",
+    "33,000 a week"
+   ],
+   "contradicts": [
+    "low-volume-deep-research"
+   ]
+  },
+  {
+   "id": "keep-cold-emails-very-short",
+   "label": "Keep cold emails to three or four sentences; longer messages go unread",
+   "description": "Length guidance clusters at under three sentences, three to four sentences, or four to six sentences in three short paragraphs. On LinkedIn the equivalent cap is around 50 words.",
+   "keywords": [
+    "three sentences",
+    "four sentences",
+    "short email",
+    "under 50 words",
+    "keeps it brief",
+    "too long goes unread",
+    "four to six sentences",
+    "two paragraphs"
+   ],
+   "contradicts": [
+    "longer-cold-emails-win"
+   ]
+  },
+  {
+   "id": "longer-cold-emails-win",
+   "label": "Longer cold emails outperform very short ones because you need space to make the case",
+   "description": "Short is not automatically better; a researched longer email that introduces you, states the challenge and rebuts an objection convinces the buyer the time is worth it.",
+   "keywords": [
+    "longer emails",
+    "not automatically better",
+    "space to convince",
+    "introduce yourself",
+    "against short-email advice",
+    "multi-paragraph"
+   ],
+   "contradicts": [
+    "keep-cold-emails-very-short"
+   ]
+  },
+  {
+   "id": "write-like-a-human-not-a-marketer",
+   "label": "Write cold outreach casually and plainly, like a note from a colleague or a friend",
+   "description": "Lowercase, no formal punctuation, no corporate language, no marketing polish; some frame it as giving a friend professional advice. AI copy must be stripped of its tells.",
+   "keywords": [
+    "casual",
+    "lowercase",
+    "like a friend",
+    "plain",
+    "not corporate",
+    "conversational",
+    "strip AI tells",
+    "no dashes",
+    "reads like a colleague",
+    "SPEAR"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "deep-per-prospect-personalisation",
+   "label": "Every message needs real per-prospect research; a merge field or a compliment is not personalisation",
+   "description": "Each lead now needs minutes of research an AI cannot replicate — a specific external trigger, an observed detail, their own public data. Heavily researched emails are cited at 43% open and 20% reply. Inserting a first name or a generic compliment is explicitly rejected as fake personalisation that reads as templated at scale.",
+   "keywords": [
+    "personalisation",
+    "research each prospect",
+    "specific to them",
+    "minutes of research",
+    "their review count",
+    "observation about them",
+    "external trigger",
+    "43% open 20% reply",
+    "icebreaker line",
+    "not personalisation",
+    "first name merge",
+    "fake personalisation",
+    "generic compliment",
+    "reads as templated",
+    "observed behaviour"
+   ],
+   "contradicts": [
+    "personalise-by-segment-not-person"
+   ]
+  },
+  {
+   "id": "personalise-by-segment-not-person",
+   "label": "Personalise at the segment level with job-title and industry templates rather than per individual",
+   "description": "A subject line or opener specific to a cohort scales to a hundred emails an hour where individual research caps at ten a day; only the subject line, opening line and call to action need to change.",
+   "keywords": [
+    "segment level",
+    "cohort",
+    "template per segment",
+    "job title plus industry",
+    "scale personalisation",
+    "change only subject and opener",
+    "throughput"
+   ],
+   "contradicts": [
+    "deep-per-prospect-personalisation"
+   ]
+  },
+  {
+   "id": "subject-line-is-decisive",
+   "label": "The subject line is the most important part of a cold email",
+   "description": "Subject line plus first sentence form the preview text and largely decide whether the message is read; a low open rate points straight at them.",
+   "keywords": [
+    "subject line matters most",
+    "preview text",
+    "open rate",
+    "most important part",
+    "first sentence",
+    "decides if it is read"
+   ],
+   "contradicts": [
+    "subject-lines-barely-matter"
+   ]
+  },
+  {
+   "id": "subject-lines-barely-matter",
+   "label": "Cold email subject lines have very little effect on performance",
+   "description": "Testing subject-line wording is close to wasted effort compared with the offer and the list.",
+   "keywords": [
+    "subject lines don't matter",
+    "little effect",
+    "not worth testing",
+    "overrated"
+   ],
+   "contradicts": [
+    "subject-line-is-decisive"
+   ]
+  },
+  {
+   "id": "plain-vague-subject-lines",
+   "label": "Plain, short, slightly vague subject lines get the best open rates",
+   "description": "Lines like 'quick question' still work, and vagueness forces the open. Held against the view that such lines instantly read as a pitch.",
+   "keywords": [
+    "quick question",
+    "short subject",
+    "vague",
+    "plain",
+    "forces the open",
+    "one or two words"
+   ],
+   "contradicts": [
+    "hyper-specific-subject-lines"
+   ]
+  },
+  {
+   "id": "hyper-specific-subject-lines",
+   "label": "A subject line should be so specific to the recipient that it makes no sense to anyone else",
+   "description": "Merge the company name, their old and new employer, or a local reference; generic lines read instantly as a pitch, and some say longer lines broken with plus signs work. Related tricks make the message look like existing correspondence — a 're:' prefix, or a line that sounds like something a colleague inside their own company would send.",
+   "keywords": [
+    "specific subject line",
+    "company name in subject",
+    "old company new company",
+    "makes no sense to anyone else",
+    "generic reads as sales",
+    "location in subject",
+    "longer subject lines",
+    "re:",
+    "reply prefix",
+    "looks like a thread",
+    "sounds internal",
+    "like a colleague sent it"
+   ],
+   "contradicts": [
+    "plain-vague-subject-lines"
+   ]
+  },
+  {
+   "id": "aim-the-first-email-at-a-reply",
+   "label": "The first message should aim only for a reply, not a booked meeting",
+   "description": "Asking a stranger for a meeting fails because no trust or proof exists yet; ask a low-friction question, hold the offer back and let the conversation start. Reply rate of any kind is the metric that drives meetings.",
+   "keywords": [
+    "aim for a reply",
+    "not a meeting",
+    "start a conversation",
+    "one question",
+    "reply is the metric",
+    "hold the offer back",
+    "are you taking new clients"
+   ],
+   "contradicts": [
+    "ask-assumptively-for-the-meeting"
+   ]
+  },
+  {
+   "id": "ask-assumptively-for-the-meeting",
+   "label": "Ask assumptively for time; never end with soft interest-based language",
+   "description": "'Worth a chat?' and 'let me know' are too weak to act on; use exactly one call to action and make it booking the meeting.",
+   "keywords": [
+    "assumptive",
+    "ask for time",
+    "never worth a chat",
+    "one CTA",
+    "let me know is vague",
+    "direct ask",
+    "book the meeting"
+   ],
+   "contradicts": [
+    "aim-the-first-email-at-a-reply",
+    "humility-beats-the-confident-close"
+   ]
+  },
+  {
+   "id": "no-booking-link-in-a-cold-email",
+   "label": "Never put a calendar booking link in an outbound email",
+   "description": "A link is presumptuous and shifts the work onto the buyer; ask for a window and send the invite yourself, or offer two named slots.",
+   "keywords": [
+    "no calendar link",
+    "don't send Calendly",
+    "presumptuous",
+    "send the invite yourself",
+    "two date options",
+    "shifts work to the buyer"
+   ],
+   "contradicts": [
+    "send-times-or-a-link-once-they-reply"
+   ]
+  },
+  {
+   "id": "send-times-or-a-link-once-they-reply",
+   "label": "When a prospect replies asking to talk, just send times or a booking link and stop selling",
+   "description": "Re-pitching a warm reply kills it; move straight to logistics.",
+   "keywords": [
+    "send times",
+    "calendar link on reply",
+    "don't re-pitch",
+    "just book it",
+    "move to logistics"
+   ],
+   "contradicts": [
+    "no-booking-link-in-a-cold-email"
+   ]
+  },
+  {
+   "id": "give-value-before-pitching",
+   "label": "Lead with free value or a curiosity gap rather than a pitch",
+   "description": "Offer a free front-end result, a partial solution, a resource or permission to send something, and qualify afterwards; some hold that reciprocity from visible unpaid effort is the only reason cold outreach works. The related move is to withhold the detail, the mechanism or the price from the first message so the recipient has to reply to get it.",
+   "keywords": [
+    "free front end",
+    "give value first",
+    "reciprocity",
+    "partial solution free",
+    "ask permission to send",
+    "no strings attached",
+    "free first piece of work",
+    "don't pitch in the first message",
+    "withhold detail",
+    "curiosity gap",
+    "omit the details",
+    "price only in the reply",
+    "they have to ask",
+    "tease"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "follow-ups-produce-most-meetings",
+   "label": "Most booked meetings come from a follow-up, not the first email",
+   "description": "Figures cited run to 70-80% of meetings from follow-ups, and the usual cause of 'cold email doesn't work' is never following up. Each additional follow-up adds replies.",
+   "keywords": [
+    "follow up",
+    "70-80% from follow-ups",
+    "never followed up",
+    "second email",
+    "persistence",
+    "more touches more replies"
+   ],
+   "contradicts": [
+    "first-email-always-performs-best"
+   ]
+  },
+  {
+   "id": "first-email-always-performs-best",
+   "label": "The first email always performs best and later ones bring diminishing returns and spam complaints",
+   "description": "Extra emails in a sequence buy little and cost deliverability, so cap the sequence and re-email the market later instead.",
+   "keywords": [
+    "first email performs best",
+    "diminishing returns",
+    "spam complaints",
+    "later emails hurt",
+    "cap the sequence"
+   ],
+   "contradicts": [
+    "follow-ups-produce-most-meetings"
+   ]
+  },
+  {
+   "id": "cap-the-sequence-at-two-or-three",
+   "label": "Cap the sequence at two or three emails and re-approach the market later instead of extending it",
+   "description": "Sending capacity is better spent on new prospects, and sequences longer than four or five devalue the sender. Rather than adding touches, re-email the whole addressable market roughly quarterly — treated as safe because nobody remembers a cold email they ignored.",
+   "keywords": [
+    "two emails",
+    "three emails",
+    "cap the sequence",
+    "stop after four touches",
+    "move to a fresh list",
+    "devalues you",
+    "follow up twice then stop",
+    "re-email quarterly",
+    "re-sequence",
+    "nobody remembers",
+    "whole addressable market",
+    "recycle the list"
+   ],
+   "contradicts": [
+    "run-four-or-more-touches"
+   ]
+  },
+  {
+   "id": "run-four-or-more-touches",
+   "label": "Run at least four touches — an initial email plus three or more follow-ups",
+   "description": "Sequences of an email plus three follow-ups, a four-touch sequence yielding 10-25% response, or a fourteen-day multi-touch cadence.",
+   "keywords": [
+    "three follow-ups",
+    "four touch",
+    "14-day sequence",
+    "one to three follow-ups",
+    "four-touch response rate",
+    "longer cadence"
+   ],
+   "contradicts": [
+    "cap-the-sequence-at-two-or-three"
+   ]
+  },
+  {
+   "id": "follow-up-every-24-48-hours",
+   "label": "Follow up every 24 to 48 hours; wider spacing drops reply rates sharply",
+   "description": "Tight cadence keeps the first email in mind, with phone calls interleaved on the alternate days.",
+   "keywords": [
+    "24-48 hours",
+    "next day",
+    "tight cadence",
+    "daily follow-up",
+    "interleave calls"
+   ],
+   "contradicts": [
+    "space-follow-ups-three-to-seven-days"
+   ]
+  },
+  {
+   "id": "space-follow-ups-three-to-seven-days",
+   "label": "Leave three to seven days between follow-ups; a one-day gap is too short",
+   "description": "Spacing cited at three to four days, four days, or three to seven; one creator explicitly calls a one-day gap wrong.",
+   "keywords": [
+    "three days",
+    "four days apart",
+    "three to seven days",
+    "one day is too short",
+    "spaced out",
+    "wait a few days"
+   ],
+   "contradicts": [
+    "follow-up-every-24-48-hours"
+   ]
+  },
+  {
+   "id": "keep-follow-ups-short-and-referring-back",
+   "label": "Follow-ups should be very short and point back to the first email rather than adding new material",
+   "description": "A one-line nudge such as asking for their thoughts on the original message is cited as outperforming any other follow-up.",
+   "keywords": [
+    "short follow-up",
+    "bump",
+    "point back",
+    "your thoughts on this",
+    "one line",
+    "don't add new content"
+   ],
+   "contradicts": [
+    "change-the-angle-each-follow-up"
+   ]
+  },
+  {
+   "id": "change-the-angle-each-follow-up",
+   "label": "Each follow-up should switch the value proposition, angle or ask rather than repeat the first email",
+   "description": "Hold research back from email one so later messages still look researched; make the third email a lower-friction ask with a different subject line so it does not thread onto ignored messages; paraphrase rather than resend.",
+   "keywords": [
+    "switch the angle",
+    "different value prop",
+    "new subject line",
+    "lower friction ask",
+    "hold back research",
+    "paraphrase",
+    "elaborate on the first"
+   ],
+   "contradicts": [
+    "keep-follow-ups-short-and-referring-back"
+   ]
+  },
+  {
+   "id": "the-breakup-email-pulls-replies",
+   "label": "A final breakup or opt-out message pulls a disproportionate share of replies",
+   "description": "An assumptive close that offers an explicit way out, or pushes the conversation a month out, converts better than any middle touch.",
+   "keywords": [
+    "breakup email",
+    "opt out",
+    "closing the loop",
+    "final message",
+    "assumptive breakup",
+    "permission to stop"
+   ],
+   "contradicts": [
+    "never-send-a-pleading-breakup"
+   ]
+  },
+  {
+   "id": "never-send-a-pleading-breakup",
+   "label": "Never send a pleading breakup email; use the last touch to ask who the right contact is",
+   "description": "Begging for a reply damages the sender; redirect to another person in the company instead.",
+   "keywords": [
+    "no breakup email",
+    "pleading",
+    "who is the right person",
+    "redirect",
+    "don't beg"
+   ],
+   "contradicts": [
+    "the-breakup-email-pulls-replies"
+   ]
+  },
+  {
+   "id": "cold-email-benchmark-rates",
+   "label": "Benchmark rates exist, and which one you miss tells you which element is broken",
+   "description": "Cited targets disagree: 1.5-3% reply as healthy, 5-10% as the target zone, 11.5% from a custom-scraped list, 40-60% open with below 30% signalling deliverability trouble, 6% open and under 1% reply as the industry average, and one booked call per 200 or per 500 emails. The diagnostic reading is that a low open rate points at the subject line and deliverability, a reply rate below about 2% at the list or the domains, and 2-5% at the copy and offer.",
+   "keywords": [
+    "reply rate",
+    "open rate benchmark",
+    "1.5-3%",
+    "5-10% reply",
+    "40-60% open",
+    "one call per 200 emails",
+    "500 emails per meeting",
+    "industry average",
+    "conversion rate 1-2%",
+    "diagnose",
+    "below 2% means the list",
+    "2-5% means the copy",
+    "low open rate means subject line",
+    "three diagnostics",
+    "what the metric tells you",
+    "new domains and new copy"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "never-criticise-their-current-work",
+   "label": "Give the finding away with no pitch and without criticising what they already have",
+   "description": "Do not enumerate faults or hold improvements back behind payment. The strongest version sends the audit score or finding with no offer, no pitch and no booking link at all, so prospects reply asking what it means rather than about price, and shows only the one fix matching the biggest gap.",
+   "keywords": [
+    "don't criticise",
+    "stay complimentary",
+    "give the advice away",
+    "don't list what's wrong",
+    "no strings",
+    "free fixes",
+    "no pitch",
+    "no booking link",
+    "just the score",
+    "no strings attached",
+    "they ask you",
+    "one fix only",
+    "flips the dynamic"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "invite-to-a-workshop-not-a-call",
+   "label": "Invite cold prospects to a live workshop instead of asking for a call",
+   "description": "Selling one-to-many removes the need for separate sales calls; cited at around 4% reply versus 1-3% for a traditional cold email, with about half of yeses attending and 20% of attendees booking a call. The workshop must teach, not pitch.",
+   "keywords": [
+    "workshop invite",
+    "live session",
+    "one to many",
+    "4% reply",
+    "attendance rate",
+    "must deliver value",
+    "not an hour-long pitch",
+    "reply with yes"
+   ],
+   "contradicts": [
+    "webinars-read-as-a-pitch"
+   ]
+  },
+  {
+   "id": "webinars-read-as-a-pitch",
+   "label": "Webinars convert worse to sophisticated audiences because they recognise them as a sales pitch",
+   "description": "The more experienced the buyer, the more transparent the format.",
+   "keywords": [
+    "webinar",
+    "sophisticated audience",
+    "recognise the pitch",
+    "converts worse",
+    "format is transparent"
+   ],
+   "contradicts": [
+    "invite-to-a-workshop-not-a-call"
+   ]
+  },
+  {
+   "id": "let-ai-write-the-outreach",
+   "label": "Have an AI model draft the outreach rather than writing it yourself",
+   "description": "Recommended for anyone who does not write well, and for producing spintax and personalised variants at scale, which also aids deliverability. Advocates still filter or edit the output.",
+   "keywords": [
+    "AI writes it",
+    "ChatGPT drafts",
+    "spintax",
+    "AI personalisation",
+    "unique variants",
+    "don't write it yourself",
+    "AI-generated ad copy"
+   ],
+   "contradicts": [
+    "ai-must-not-write-the-message"
+   ]
+  },
+  {
+   "id": "ai-must-not-write-the-message",
+   "label": "Do not let AI write the message; keep the structure human and spend the effort on one personalised line",
+   "description": "AI cannot compensate for not knowing the offer, raw AI copy does not convert, and one creator's own AI-personalisation experiment produced no positive responses. AI comments on prospects' posts read as spam.",
+   "keywords": [
+    "don't use AI to write",
+    "bad inputs bad campaigns",
+    "raw AI doesn't convert",
+    "rewrite in your own voice",
+    "AI comments read as spam",
+    "keep the structure static",
+    "human must direct"
+   ],
+   "contradicts": [
+    "let-ai-write-the-outreach"
+   ]
+  },
+  {
+   "id": "templated-mass-outreach-is-dead",
+   "label": "Templated high-volume outreach has stopped working because buyers have seen every angle",
+   "description": "AI has flooded inboxes with identical messages, generic blasts to hundreds or thousands produce nothing, and long corporate templates taught by sales enablement do not work in practice.",
+   "keywords": [
+    "mass outreach is dead",
+    "blasting doesn't work",
+    "seen every angle",
+    "AI flooded inboxes",
+    "generic emails",
+    "nobody reads them",
+    "stopped working"
+   ],
+   "contradicts": [
+    "cold-email-still-works-with-setup",
+    "one-template-swapping-fields",
+    "volume-beats-refinement"
+   ]
+  },
+  {
+   "id": "one-template-swapping-fields",
+   "label": "Use one template and swap only the business name, number and location for every prospect",
+   "description": "Repeat a single proven message rather than varying the approach, so results stay interpretable.",
+   "keywords": [
+    "one template",
+    "swap the name",
+    "same message every time",
+    "repeat the script",
+    "don't vary"
+   ],
+   "contradicts": [
+    "templated-mass-outreach-is-dead"
+   ]
+  },
+  {
+   "id": "put-social-proof-in-the-email",
+   "label": "Put a specific, genuine client result in the message — and never fabricate one",
+   "description": "One line of client social proof is cited as nearly doubling reply rates, and structures pair the pain point with a case study before the ask. Fabricated case studies, faked props and exaggerated audit scores are rejected outright: truthful advertising is said to outperform embellishment because trust is the hardest thing to win.",
+   "keywords": [
+    "social proof",
+    "case study",
+    "specific result",
+    "named client",
+    "doubled reply rate",
+    "credibility line",
+    "measurable result",
+    "never fabricate",
+    "don't exaggerate",
+    "genuine props",
+    "truth in advertising",
+    "real numbers",
+    "no fake urgency",
+    "honesty"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "humility-beats-the-confident-close",
+   "label": "Humble, sincere outreach now outperforms the confident assumed-close style",
+   "description": "Humility is itself the pattern interrupt after years of assertive templates.",
+   "keywords": [
+    "humble",
+    "sincere",
+    "assumed close is dead",
+    "pattern interrupt",
+    "not confident",
+    "low pressure"
+   ],
+   "contradicts": [
+    "ask-assumptively-for-the-meeting"
+   ]
+  },
+  {
+   "id": "pre-empt-objections-in-the-message",
+   "label": "Handle objections in writing: rebut the likely one up front and argue the ones that come back",
+   "description": "Surfacing the obvious objection yourself turns a blocker into something you can handle. Objections in replies are convertible — acknowledge the concern and argue the meeting still makes sense — and a reusable bank of base responses to recurring objections is recommended over dropping the prospect.",
+   "keywords": [
+    "pre-empt objections",
+    "rebut in the first email",
+    "handle it before they raise it",
+    "common objection",
+    "anticipate",
+    "objection replies",
+    "acknowledge and argue",
+    "response bank",
+    "don't drop them",
+    "convert the no"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "expect-hostility-in-cold-outreach",
+   "label": "Insults and hostile replies are normal in cold outreach and are not evidence the offer is bad",
+   "description": "Treat abuse as a cost of the channel rather than a signal.",
+   "keywords": [
+    "hostile replies",
+    "insults",
+    "abuse",
+    "normal",
+    "not a signal",
+    "thick skin",
+    "rejection"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "profile-as-a-landing-page",
+   "label": "Treat your social profile as a conversion landing page, not a CV",
+   "description": "Headline states who you help and the outcome rather than a job title, the about section is written for customers with concrete results, and there is a photo, banner and a small number of featured links. Disagreement exists on the photo: a plain corporate headshot versus a smiling personal shot, and on whether to write the about section yourself or with AI.",
+   "keywords": [
+    "profile optimisation",
+    "headline",
+    "landing page not a resume",
+    "about section",
+    "banner",
+    "featured links",
+    "professional photo",
+    "who you help",
+    "don't look like a salesperson",
+    "bio"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "send-blank-connection-requests",
+   "label": "Send connection requests with no note; blank requests are accepted more often",
+   "description": "A generic note is the tell of a salesperson about to pitch, and skipping it is faster. Some qualify this as true only when the profile is already optimised or when mutual connections exist.",
+   "keywords": [
+    "blank connection request",
+    "no note",
+    "no message",
+    "accepted more often",
+    "data shows",
+    "skip the note",
+    "faster"
+   ],
+   "contradicts": [
+    "always-add-a-personal-note"
+   ]
+  },
+  {
+   "id": "always-add-a-personal-note",
+   "label": "Always attach a personalised note explaining why you want to connect",
+   "description": "One sentence of genuine personalisation, ideally a specific compliment about their content, is cited as producing the highest acceptance rate of the message types tested.",
+   "keywords": [
+    "personalised note",
+    "one sentence",
+    "specific compliment",
+    "why you want to connect",
+    "highest acceptance",
+    "genuine note"
+   ],
+   "contradicts": [
+    "send-blank-connection-requests"
+   ]
+  },
+  {
+   "id": "never-pitch-in-the-connection-request",
+   "label": "Never pitch in a connection request or use direct messages for volume selling",
+   "description": "Hold the pitch until after connection and some passive engagement; the first message should ask a diagnostic question, and listing your services kills replies. Volume cold pitching in DMs is said to destroy trust and any long-term relationship.",
+   "keywords": [
+    "never pitch in the request",
+    "hold the pitch",
+    "day five",
+    "diagnostic questions first",
+    "don't list your services",
+    "no pitch on connect",
+    "don't mass DM",
+    "no sales intent",
+    "destroys trust",
+    "conversation not pitch",
+    "relationship first"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "cap-daily-connection-requests",
+   "label": "Stay inside platform-safe daily limits and do it manually before automating anything",
+   "description": "Caps cited at roughly 20 a day, 20-30 a day, or 75 messages per channel with 150 combined across email and social; exceeding them risks a ban and safe limits keep falling. Automation should only follow an approach that already works manually, because it dilutes one that fails, and cloud tools with delays and warm-up are preferred over browser extensions that get accounts suspended.",
+   "keywords": [
+    "20 a day",
+    "20-30 invites",
+    "daily limit",
+    "account ban",
+    "platform limits",
+    "75 per channel",
+    "150 combined",
+    "limits keep falling",
+    "manual first",
+    "automate later",
+    "automation dilutes",
+    "browser extension gets you banned",
+    "cloud automation",
+    "delays and limits",
+    "prove it manually"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "one-or-two-line-dms",
+   "label": "A direct message should be one or two lines — an observation plus a question — like a text, not an email",
+   "description": "Pasting cold email into a DM fails because the inbox behaves like a messaging app; anything requiring a scroll gets ignored.",
+   "keywords": [
+    "one line DM",
+    "observation plus question",
+    "like a text message",
+    "under 50 words",
+    "don't paste an email",
+    "two lines",
+    "short DM"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "avoid-inmails",
+   "label": "Do not use paid InMails; response rates are very poor",
+   "description": "Only salespeople send them, so recipients dismiss them on sight, and connecting instead confirms the prospect actually uses the platform.",
+   "keywords": [
+    "InMail",
+    "paid message",
+    "poor response",
+    "dismissed on sight",
+    "connect instead"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "voice-notes-and-video-messages",
+   "label": "Recorded personal media — voice notes, selfie videos, screen-recorded audits — outperforms text because it cannot be automated",
+   "description": "A one-to-two-minute screen recording reviewing their site, ads, listing or SEO proves a human made an effort; voice notes and short videos get the highest follow-up response because almost nobody sends them. Around thirty seconds, smiling, is the cited format, and changing medium beats repeating text. The cost caps output at roughly ten to twenty prospects a day, and supporters treat that unscalability as the source of the response rate.",
+   "keywords": [
+    "voice note",
+    "selfie video",
+    "video message",
+    "30 seconds",
+    "change the medium",
+    "cannot be automated",
+    "highest response",
+    "stand out",
+    "Loom",
+    "screen recording",
+    "video audit",
+    "personalised video",
+    "review their site",
+    "one to two minutes",
+    "proves a human made it",
+    "ask permission to send a video",
+    "10-20 a day",
+    "two or three a day",
+    "time cost",
+    "unscalable",
+    "that's why it works",
+    "almost nobody sends them"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "warm-them-with-content-first",
+   "label": "Get the prospect to consume your content before messaging, so the DM is warm rather than cold",
+   "description": "Accepted connections create a mutual follow, comments function as content, and cold outreach performs far better when the prospect has already met you somewhere. Profile views and engagement then act as the trigger to message.",
+   "keywords": [
+    "warm not cold",
+    "content first",
+    "they saw your post",
+    "comment on their posts",
+    "mutual follow",
+    "engagement as a trigger",
+    "consumed your content",
+    "engage before pitching"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "organic-social-over-cold-outbound",
+   "label": "Organic posting and engagement, not cold outbound, should be the primary social lead channel",
+   "description": "Cold outbound is no longer the right primary approach on LinkedIn; a single organic post is cited as closing a $70,000 deal and booking six meetings in two hours.",
+   "keywords": [
+    "organic over outbound",
+    "cold outbound no longer works",
+    "post instead",
+    "content is the channel",
+    "one post closed a deal",
+    "inbound from posting"
+   ],
+   "contradicts": [
+    "cold-outreach-is-the-fastest-start"
+   ]
+  },
+  {
+   "id": "close-in-the-dm-without-a-call",
+   "label": "Deals can be closed inside a chat conversation without ever booking a call",
+   "description": "Moving a DM onto a phone call fills the calendar with unqualified brain-pickers; a this-or-that question sorts intent inside the thread.",
+   "keywords": [
+    "close in the DM",
+    "no sales call",
+    "don't move to a call",
+    "brain pickers",
+    "this or that",
+    "chat close"
+   ],
+   "contradicts": [
+    "never-sell-without-a-live-call"
+   ]
+  },
+  {
+   "id": "cold-calling-is-the-most-controllable-channel",
+   "label": "Cold calling is the most controllable and directly productive lead activity there is",
+   "description": "Unlike passive branding, posting or networking it produces conversations on demand; a business that does none will struggle. One creator claims an eight-figure business built on outbound calling alone.",
+   "keywords": [
+    "cold calling works",
+    "most controllable",
+    "dials to meetings",
+    "direct",
+    "not passive",
+    "eight figures on calling",
+    "phone"
+   ],
+   "contradicts": [
+    "cold-calling-is-getting-harder"
+   ]
+  },
+  {
+   "id": "cold-calling-is-getting-harder",
+   "label": "Cold calling is getting harder as an acquisition channel than it used to be",
+   "description": "Response is declining and single-channel reliance on it is a risk.",
+   "keywords": [
+    "harder than it used to be",
+    "declining",
+    "single-channel risk",
+    "getting worse",
+    "diminishing"
+   ],
+   "contradicts": [
+    "cold-calling-is-the-most-controllable-channel"
+   ]
+  },
+  {
+   "id": "daily-dialling-builds-skill",
+   "label": "Cold calling is a volume-and-repetition skill with knowable dial-to-meeting ratios",
+   "description": "Competence comes only from dialling daily over a long period: confidence follows action, the first dials of a session are the worst, nerves resolve after a few dozen calls, and no sale should be expected in the first week or month. Prescriptions range from a fixed 30 minutes a day to six to eight hours. Benchmark ratios disagree widely — 40 dials an hour, 50 dials to five conversations, 25 dials per meeting, 100 calls to 15 conversations and 2 bookings, three to five meetings a day — with more than 80% of calls said to be lost in the first 60-90 seconds and a conversation rate below 5% signalling a broken call rather than a bad list.",
+   "keywords": [
+    "dial every day",
+    "30 minutes a day",
+    "two to three hours",
+    "reps",
+    "confidence follows action",
+    "warm-up calls",
+    "no sale in the first month",
+    "desensitised to rejection",
+    "dials per meeting",
+    "25 dials",
+    "40 calls an hour",
+    "conversion rate",
+    "three to five meetings a day",
+    "lost in the first 30 seconds",
+    "80% lost in 60-90 seconds",
+    "below 5%"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "permission-opener-not-pleasantries",
+   "label": "Open a cold call by asking permission for thirty seconds, never with pleasantries",
+   "description": "A permission-based opener lowers tension and reduces hang-ups; 'how are you today' and 'did I catch you at a bad time' are named as the worst openers because they signal a stranger selling.",
+   "keywords": [
+    "permission based opener",
+    "thirty seconds",
+    "can I have 30 seconds",
+    "never how are you",
+    "no pleasantries",
+    "did I catch you at a bad time",
+    "lowers tension"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "admit-it-is-a-cold-call",
+   "label": "Admit up front that this is a cold call and you are interrupting them",
+   "description": "Naming the interruption, sometimes with a tactical empathy line, disarms the prospect and buys permission for one question.",
+   "keywords": [
+    "this is a cold call",
+    "I'm interrupting",
+    "tactical empathy",
+    "self-aware",
+    "admit it",
+    "honest opener"
+   ],
+   "contradicts": [
+    "never-label-it-a-cold-call"
+   ]
+  },
+  {
+   "id": "never-label-it-a-cold-call",
+   "label": "Openly labelling the call as a cold call costs you status with the prospect",
+   "description": "The self-aware callout only lands when the prospect is themselves a salesperson.",
+   "keywords": [
+    "don't say cold call",
+    "costs status",
+    "only works on salespeople",
+    "lowers your standing"
+   ],
+   "contradicts": [
+    "admit-it-is-a-cold-call"
+   ]
+  },
+  {
+   "id": "pretext-opener-that-breaks-the-pattern",
+   "label": "Open with a pretext that sounds like anything other than a sales call",
+   "description": "Openers cited include sounding like you are returning their call, saying their listing showed as closed, naming a supposed mutual referrer, posing as a would-be customer, or sounding confused and unsure so people want to help. Some insist the pretext must be literally true.",
+   "keywords": [
+    "pattern interrupt",
+    "returning your call",
+    "showed as closed",
+    "posing as a customer",
+    "referred by",
+    "sounded confused",
+    "pretext",
+    "stops them hanging up"
+   ],
+   "contradicts": [
+    "gimmick-openers-fail"
+   ]
+  },
+  {
+   "id": "gimmick-openers-fail",
+   "label": "Gimmicky pattern interrupts such as jokes or weird openers rarely work",
+   "description": "Novelty openers, and research or intent-signal openers that fail when the data is wrong, are rated poorly; the common openers all need thousands of calls of tonal skill to land.",
+   "keywords": [
+    "gimmick",
+    "jokes don't work",
+    "weird opener",
+    "rarely works",
+    "openers rated poorly",
+    "needs tonal skill"
+   ],
+   "contradicts": [
+    "pretext-opener-that-breaks-the-pattern"
+   ]
+  },
+  {
+   "id": "sound-like-an-ordinary-unpolished-person",
+   "label": "Deliberately sound like an ordinary, slightly unprofessional human rather than a polished salesperson",
+   "description": "Filler words, disfluencies and an unrehearsed delivery interrupt the pitch pattern so the prospect listens; downplaying yourself with words like 'just' lowers their guard.",
+   "keywords": [
+    "unprofessional",
+    "sound normal",
+    "filler words",
+    "disfluencies",
+    "not polished",
+    "doesn't sound read",
+    "just calling",
+    "lowers the guard"
+   ],
+   "contradicts": [
+    "calm-grounded-peer-tonality"
+   ]
+  },
+  {
+   "id": "calm-grounded-peer-tonality",
+   "label": "Speak slowly and calmly like a senior peer, because delivery decides the call far more than the words",
+   "description": "Grounded energy from certainty, pauses at the end of sentences and a downward tone read as an executive; over-enthusiasm triggers suspicion and reads as desperation. One figure puts roughly 85% of a call's effect on delivery and 15% on the words, and likeability is rated above script wording. Some pair this with smiling while dialling.",
+   "keywords": [
+    "tonality",
+    "slow down",
+    "monotone",
+    "pause",
+    "down tone",
+    "not enthusiastic",
+    "desperation",
+    "peer not vendor",
+    "grounded",
+    "smile while dialling",
+    "85% delivery",
+    "tonality beats script",
+    "likeability",
+    "how you say it",
+    "rapport",
+    "not the words"
+   ],
+   "contradicts": [
+    "sound-like-an-ordinary-unpolished-person"
+   ]
+  },
+  {
+   "id": "follow-the-script-word-for-word",
+   "label": "Follow the cold call script word for word rather than improvising",
+   "description": "A fixed script run unchanged for long enough produces data; new reps should not freestyle or look for their own voice until they have thousands of reps.",
+   "keywords": [
+    "word for word",
+    "stick to the script",
+    "don't freestyle",
+    "run it unchanged",
+    "performance",
+    "same script every call"
+   ],
+   "contradicts": [
+    "work-from-a-framework-not-a-script"
+   ]
+  },
+  {
+   "id": "work-from-a-framework-not-a-script",
+   "label": "Do not read a script; work from a mental framework or bullets so you do not sound robotic",
+   "description": "Reading verbatim is audible to the prospect and kills the conversation.",
+   "keywords": [
+    "don't read a script",
+    "framework",
+    "bullets",
+    "sounds robotic",
+    "natural",
+    "mental outline"
+   ],
+   "contradicts": [
+    "follow-the-script-word-for-word"
+   ]
+  },
+  {
+   "id": "change-one-variable-at-a-time",
+   "label": "Treat outreach as a controlled experiment: change one variable at a time",
+   "description": "Varying the pitch call to call is randomness, not testing, and makes a bad result undiagnosable; consistency is what makes an outcome interpretable.",
+   "keywords": [
+    "one variable",
+    "controlled experiment",
+    "consistency",
+    "randomness not testing",
+    "diagnostic",
+    "can't identify the cause"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "the-only-goal-is-the-meeting",
+   "label": "The only goal of a cold call is to book the meeting; never try to sell on the phone",
+   "description": "Explaining the product, pitching features or answering detailed questions on the call loses the prospect; use their interest to book instead.",
+   "keywords": [
+    "book the meeting",
+    "don't sell on the call",
+    "no product detail",
+    "push to the meeting",
+    "generate interest only",
+    "don't explain how it works"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "never-pitch-the-gatekeeper",
+   "label": "Never pitch a gatekeeper or call-centre representative; only the owner can buy",
+   "description": "Tactics for getting past include using the owner's first name as if you know them, naming the wrong person so they correct you, or asking to be transferred to voicemail.",
+   "keywords": [
+    "gatekeeper",
+    "receptionist",
+    "only the owner can buy",
+    "first name only",
+    "name the wrong person",
+    "transfer me to voicemail",
+    "get past reception"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "open-on-their-problem-not-your-product",
+   "label": "Open with a specific problem and its costly consequence rather than a value proposition",
+   "description": "A value proposition forces the prospect to connect it to themselves; instead name what people in their exact role are frustrated by, offer a menu of common problems, or ask who is responsible for a problem with a named consequence. Hedged phrasing stops assertive prospects denying it outright.",
+   "keywords": [
+    "problem proposition",
+    "not a value proposition",
+    "we help X do Y fails",
+    "menu of problems",
+    "who is responsible for",
+    "costly consequence",
+    "hedging",
+    "could be",
+    "frustrated by"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "never-ask-if-they-are-interested",
+   "label": "Never ask directly whether they are interested; invert the ask so they pull you back in",
+   "description": "The direct question reduces the call to a yes or no, triggers reactance, and no is the only rational answer at that stage. Inversions cited include saying you are not sure it makes sense to talk, predicting they already have it handled, making a deliberately wrong assumption so they correct you, attributing reasons to other people, and asking whether they would be opposed rather than open — the aim being that the meeting becomes their own idea.",
+   "keywords": [
+    "are you interested",
+    "reactance",
+    "reflex no",
+    "yes/no question",
+    "closes the conversation",
+    "never ask that",
+    "push away",
+    "take away",
+    "would you be opposed",
+    "wrong assumption",
+    "they correct you",
+    "not sure it makes sense",
+    "predict they have it handled",
+    "reverse psychology",
+    "their own idea"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "get-to-the-objection",
+   "label": "The goal of the opening minute is to reach an objection, and 'send me an email' is one to refuse",
+   "description": "A call that never produces an objection is already dead, and a script that keeps producing the same objection should be rewritten rather than the objection handled. Handle by acknowledging and offering multiple-choice reasons rather than arguing. 'Send me some information' is pre-empted by offering to send it yourself and asking what to include, or refused outright — cited as yielding about 10% more meetings.",
+   "keywords": [
+    "first objection",
+    "objection is good",
+    "build the opener around the objection",
+    "three to five stock objections",
+    "not interested",
+    "multiple choice",
+    "never argue",
+    "brush-off rate diagnoses the opener",
+    "send me information",
+    "refuse",
+    "push for the meeting",
+    "what should I include",
+    "10% more meetings",
+    "reopen the conversation"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "leave-a-full-pitch-voicemail",
+   "label": "Voicemail is a useful outcome, not a wasted call — leave a full message",
+   "description": "Approaches cited include a full pitch, a message pointing at the email you are about to send, one naming a competitor to trigger curiosity, and casual ringless drops asking for a call back.",
+   "keywords": [
+    "voicemail",
+    "ringless voicemail",
+    "leave a message",
+    "points to the email",
+    "competitor voicemail",
+    "call back",
+    "not a wasted call"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "lock-the-meeting-in-on-the-call",
+   "label": "Lock the meeting in while they are still on the phone, and dial with the right setup",
+   "description": "Confirm the email, send the invite and get it accepted before hanging up, because an unaccepted invite from an unknown sender never lands on their calendar; call back rather than assuming you are bothering them. Some add a text confirmation or an automated post-booking sequence, and one insists on booking manually rather than sending a link. Supporting mechanics cited include a local caller ID, a power dialler, concentrated dialling blocks and mid-afternoon calling — though one creator says no dialler or software is needed at all.",
+   "keywords": [
+    "confirm the email",
+    "send the invite now",
+    "accept while on the phone",
+    "text confirmation",
+    "placeholder hold",
+    "book manually",
+    "don't send a booking link",
+    "calendar invite",
+    "local number",
+    "area code",
+    "power dialler",
+    "no dialler needed",
+    "afternoon",
+    "time of day",
+    "dial blocks",
+    "concentrated blocks",
+    "distracted dialling"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "offer-two-specific-times",
+   "label": "Offer two specific days and times rather than asking for open availability",
+   "description": "A forced choice between named slots books more meetings than an open-ended request or a scheduling link.",
+   "keywords": [
+    "two options",
+    "specific times",
+    "Tuesday or Thursday",
+    "forced choice",
+    "not a link",
+    "named slots"
+   ],
+   "contradicts": [
+    "ask-for-a-window-not-a-slot",
+    "forced-choice-closes-no-longer-work"
+   ]
+  },
+  {
+   "id": "forced-choice-closes-no-longer-work",
+   "label": "High-pressure forced-choice closes such as two appointment times no longer work",
+   "description": "The meeting has to become the prospect's own idea; close with a soft logistical question or by removing risk instead.",
+   "keywords": [
+    "forced choice is dead",
+    "two times doesn't work",
+    "their own idea",
+    "soft close",
+    "do you have your calendar",
+    "morning person",
+    "no pressure"
+   ],
+   "contradicts": [
+    "offer-two-specific-times"
+   ]
+  },
+  {
+   "id": "ask-for-a-window-not-a-slot",
+   "label": "Do not propose a specific time; ask for any time over the next week or two and send the invite yourself",
+   "description": "Proposing a next-day slot is presumptuous; a wide window respects the buyer's diary.",
+   "keywords": [
+    "any time next week",
+    "don't propose a time",
+    "wide window",
+    "next week or two",
+    "send the invite yourself"
+   ],
+   "contradicts": [
+    "offer-two-specific-times"
+   ]
+  },
+  {
+   "id": "no-pain-no-meeting",
+   "label": "Do not book a meeting with a prospect who has no problem to solve",
+   "description": "Booking without pain produces unqualified pipeline that never converts; move on instead of persisting.",
+   "keywords": [
+    "no problem no meeting",
+    "disqualify",
+    "move on",
+    "unqualified pipeline",
+    "no motivation",
+    "don't persist"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "qualify-after-the-booking",
+   "label": "Ask qualification and discovery questions after the meeting is booked, not before",
+   "description": "Trust is highest immediately after commitment, so answers given then are more truthful, and firing questions before permission kills the call.",
+   "keywords": [
+    "qualify after booking",
+    "discovery after commitment",
+    "trust is highest after yes",
+    "don't interrogate first",
+    "questions after the close"
+   ],
+   "contradicts": [
+    "qualify-before-you-pitch"
+   ]
+  },
+  {
+   "id": "qualify-before-you-pitch",
+   "label": "Confirm you are speaking to the decision maker and that they qualify before pitching anything",
+   "description": "Qualifying questions on the call — decision authority, whether they hold customer data, whether they use the thing you sell — stop you pitching people who could never buy.",
+   "keywords": [
+    "are you the decision maker",
+    "qualify first",
+    "before pitching",
+    "do you use",
+    "authority",
+    "screen them"
+   ],
+   "contradicts": [
+    "qualify-after-the-booking"
+   ]
+  },
+  {
+   "id": "research-before-every-call",
+   "label": "Research the prospect before dialling and open with something specific about them",
+   "description": "Five minutes immediately before the call, or preparing the list the night before, gives a research-based reason for calling — their reviews, their site, their public data — which moves you from telemarketer to peer.",
+   "keywords": [
+    "research first",
+    "five minutes before",
+    "reason for calling",
+    "their reviews",
+    "specific to them",
+    "prepare the night before",
+    "public data",
+    "personalise the call"
+   ],
+   "contradicts": [
+    "skip-research-and-dial"
+   ]
+  },
+  {
+   "id": "skip-research-and-dial",
+   "label": "Do not research or build anything before the call; work straight down a scraped list",
+   "description": "Research openers cost prep time and fail when the data is wrong; volume of dials beats preparation per dial.",
+   "keywords": [
+    "no research",
+    "straight down the list",
+    "don't prepare",
+    "scraped list",
+    "dial volume",
+    "prep is wasted"
+   ],
+   "contradicts": [
+    "research-before-every-call"
+   ]
+  },
+  {
+   "id": "build-it-first-then-pitch-it",
+   "label": "Build the deliverable before contacting the prospect and lead with the fact that it already exists",
+   "description": "Speculative work converts because the buyer sees a finished result rather than imagining one; some give the build away and monetise through hosting or recurring fees, and a rejected build is re-skinned for another business.",
+   "keywords": [
+    "already built it",
+    "spec work",
+    "free website",
+    "built it for you",
+    "no obligation",
+    "re-skin and pitch again",
+    "finished result",
+    "student building a portfolio"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "in-person-outreach-converts-best",
+   "label": "Door-to-door and in-person outreach convert better than any remote channel",
+   "description": "Cited at 10-15 doors per booked meeting versus 25 dials or 500 emails, with in-person meetings closing better than video. Industry events are described as almost always producing at least one signed client.",
+   "keywords": [
+    "door to door",
+    "knock",
+    "in person",
+    "face to face",
+    "highest conversion",
+    "events",
+    "networking",
+    "meet locally",
+    "close rate higher"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "replace-the-direct-cta-with-a-lead-magnet",
+   "label": "Replace 'book a call' or 'get a quote' with a free offer that captures contact details",
+   "description": "Only about one percent of an audience is ready for a direct ask, so a free front-end multiplies the number of raised hands from the same traffic — figures cited include three to five times the volume and opt-in rates moving from one percent to three to five percent.",
+   "keywords": [
+    "lead magnet",
+    "free offer",
+    "opt-in",
+    "stop asking for a call",
+    "three to five times",
+    "raise a hand",
+    "mini offer",
+    "front-end offer",
+    "free thing before the paid thing"
+   ],
+   "contradicts": [
+    "free-audits-and-consults-are-weak-magnets"
+   ]
+  },
+  {
+   "id": "free-audits-and-consults-are-weak-magnets",
+   "label": "Free audits, assessments and no-obligation strategy calls are ignored and make a weak entry offer",
+   "description": "A free demo or consultation gives away nothing tangible; the entry offer should be something of real value instead.",
+   "keywords": [
+    "free audit doesn't work",
+    "free consultation",
+    "no-obligation call",
+    "ignored",
+    "weak lead magnet",
+    "give something tangible"
+   ],
+   "contradicts": [
+    "lead-with-a-free-audit",
+    "replace-the-direct-cta-with-a-lead-magnet"
+   ]
+  },
+  {
+   "id": "lead-with-a-free-audit",
+   "label": "Lead outreach with a free audit of the prospect's own asset rather than a request to hire you",
+   "description": "An audit of their site, listing or reviews is the entry offer that opens the conversation.",
+   "keywords": [
+    "free audit",
+    "free review of your site",
+    "audit offer",
+    "lead with an audit",
+    "free analysis"
+   ],
+   "contradicts": [
+    "free-audits-and-consults-are-weak-magnets"
+   ]
+  },
+  {
+   "id": "lead-magnet-solves-one-narrow-problem",
+   "label": "A lead magnet must completely solve one tiny problem, and its name matters more than its contents",
+   "description": "A checklist, a ten-minute routine or one step of a process beats a broad resource, and it must give immediate practical value rather than being thrown together or over-promised. Changing only the headline is cited as shifting opt-in volume two to ten times; a working naming formula is number plus outcome plus timeframe, chosen by testing on the target audience.",
+   "keywords": [
+    "one narrow problem",
+    "complete solution",
+    "checklist",
+    "specific not general",
+    "tiny problem",
+    "immediate value",
+    "not thrown together",
+    "name of the lead magnet",
+    "headline",
+    "packaging",
+    "two to ten times",
+    "test the title",
+    "number plus outcome plus timeframe",
+    "opt-in rate"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "the-free-offer-must-reveal-the-next-problem",
+   "label": "The free or cheap front end must expose the next problem, not solve the paid one",
+   "description": "Sell at the point of greatest deprivation — a trial that gives the solution then removes it, or a diagnostic revealing a problem that worsens with delay. Give the strategy away and sell the execution. A very low-priced introductory offer works the same way, converting people who would never buy the main product and flipping them psychologically from prospect to customer; break even on the front end and profit from the fraction who take the back end.",
+   "keywords": [
+    "must not solve the same problem",
+    "reveals the next problem",
+    "deprivation",
+    "free trial removes it",
+    "give the diagnosis sell the execution",
+    "urgency built in",
+    "tripwire",
+    "low ticket",
+    "introductory offer",
+    "break even on the front end",
+    "back end",
+    "freemium",
+    "flips them to customer",
+    "front-end offer economics"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "assessment-or-scorecard-as-the-lead-asset",
+   "label": "An online assessment, quiz or scorecard is the strongest primary lead-generation asset",
+   "description": "A fifteen-question assessment scoring the prospect against best practices, with a results page that varies the next step by score, is cited at 20-40% of visitors starting the quiz. Highly qualified respondents get a meeting; unqualified ones get content.",
+   "keywords": [
+    "assessment",
+    "scorecard",
+    "quiz",
+    "audit score",
+    "15 questions",
+    "results page",
+    "frustration hook",
+    "vary the next step by score",
+    "20-40% start rate"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "give-away-what-competitors-charge-for",
+   "label": "Give away free the things competitors charge for, including building a free tool",
+   "description": "Reciprocity makes prospects more likely to buy or share, and giving away real service work is defended as viable maths when the conversion rate covers the labour. A free interactive tool or calculator does the same job at scale: it earns backlinks by itself, tool-intent searches do not trigger AI overviews so the page still captures the click, and a related lead magnet converts the traffic.",
+   "keywords": [
+    "give away what others charge for",
+    "reciprocity",
+    "free service work",
+    "free first job",
+    "$25 of labour",
+    "cost to acquire",
+    "free tool",
+    "calculator",
+    "checker",
+    "converter",
+    "widget",
+    "earns backlinks",
+    "tool intent",
+    "no AI overview",
+    "interactive"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "work-free-to-manufacture-proof",
+   "label": "Work free or heavily discounted at the start to manufacture case studies, reviews and referrals",
+   "description": "The first thing a cold prospect asks for is proof, and free removes the barrier to getting reps while you are still bad. Terms cited include a cap of five to ten clients, exchanging the work for a review and feedback, and raising price in steps once referrals start. One creator explicitly rejects the standard advice never to work free.",
+   "keywords": [
+    "work for free",
+    "beta users",
+    "in exchange for a testimonial",
+    "first five clients",
+    "no payment no contract",
+    "reps",
+    "never work for free is wrong",
+    "zero-risk offer",
+    "case studies first"
+   ],
+   "contradicts": [
+    "take-cash-up-front"
+   ]
+  },
+  {
+   "id": "gate-the-free-offer-with-qualification",
+   "label": "Put qualification in front of the free offer or the calendar so freebie seekers and unqualified bookings are filtered out",
+   "description": "An application form, disclosed budget, ranked property data or an automated screening step before the booking link stops the calendar filling with people who could never buy — one case cited recovering 95% of a founder's week. Some prefer starting with the strongest possible offer and adding friction only once quality is visible.",
+   "keywords": [
+    "application form",
+    "qualify before booking",
+    "filter",
+    "freebie seekers",
+    "disclose budget",
+    "screening step",
+    "add friction later",
+    "gate the calendar"
+   ],
+   "contradicts": [
+    "launch-for-maximum-volume-then-add-friction"
+   ]
+  },
+  {
+   "id": "launch-for-maximum-volume-then-add-friction",
+   "label": "Launch with every setting tuned for maximum lead quantity, then add qualification once you see the quality",
+   "description": "Unqualified leads and wasted calls are information for refining the campaign rather than failures; friction is added after the data arrives.",
+   "keywords": [
+    "maximum quantity first",
+    "add friction later",
+    "wasted calls are information",
+    "tune for volume",
+    "then qualify"
+   ],
+   "contradicts": [
+    "gate-the-free-offer-with-qualification"
+   ]
+  },
+  {
+   "id": "offer-formula-outcome-number-timeframe",
+   "label": "A converting offer is a specific outcome plus an exact number plus a time frame",
+   "description": "Never promise 'more leads' — name the high-profit job type, the quantity and the deadline. A 90-day window is cited as the right urgency. Others add a risk reversal as the third component and warn that an offer which cannot be stated in one to three sentences cannot be rescued by copy or funnels.",
+   "keywords": [
+    "offer formula",
+    "specific number",
+    "timeframe",
+    "90 days",
+    "named job type",
+    "not more leads",
+    "one to three sentences",
+    "desired outcome plus guarantee"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "guarantee-and-remove-the-risk",
+   "label": "Remove the buyer's risk with a guarantee, free setup, no contract or pay-on-results",
+   "description": "Performance guarantees close prospects burned by previous suppliers, and delivering a small piece of real work before payment lets them walk away.",
+   "keywords": [
+    "guarantee",
+    "no result no payment",
+    "risk reversal",
+    "free setup",
+    "no contracts",
+    "pay on results",
+    "prove it first",
+    "money back"
+   ],
+   "contradicts": [
+    "never-guarantee-results"
+   ]
+  },
+  {
+   "id": "never-guarantee-results",
+   "label": "Never guarantee results or rankings; guarantee a process and deliverables instead",
+   "description": "Nobody can guarantee a search ranking and any such promise is a red flag; do not promise a results timeframe on the call either.",
+   "keywords": [
+    "never guarantee rankings",
+    "red flag",
+    "guarantee the process",
+    "no timeframe promises",
+    "can't promise results",
+    "deliverables not outcomes"
+   ],
+   "contradicts": [
+    "guarantee-and-remove-the-risk"
+   ]
+  },
+  {
+   "id": "urgency-and-scarcity-close-the-sale",
+   "label": "Without urgency and scarcity the prospect postpones instead of buying",
+   "description": "Deadlines, capped spots and counted-down discounts trigger the decision; offer types cited are deadline, discount and free bonus, and they can be stacked.",
+   "keywords": [
+    "urgency",
+    "scarcity",
+    "deadline",
+    "limited spots",
+    "countdown",
+    "stack the offer",
+    "postpone the decision",
+    "act now"
+   ],
+   "contradicts": [
+    "fake-scarcity-is-transparent"
+   ]
+  },
+  {
+   "id": "fake-scarcity-is-transparent",
+   "label": "Manufactured scarcity such as limited spots or an invented deadline is obvious to prospects and does not work",
+   "description": "Only genuine capacity limits are usable; selectivity about who you take on, not artificial availability, is what makes people want to work with you.",
+   "keywords": [
+    "fake scarcity",
+    "invented deadline",
+    "transparent",
+    "doesn't work",
+    "genuine capacity",
+    "selectivity not scarcity"
+   ],
+   "contradicts": [
+    "urgency-and-scarcity-close-the-sale"
+   ]
+  },
+  {
+   "id": "fixed-retainer-over-performance-pricing",
+   "label": "Charge a fixed monthly retainer rather than per-lead or revenue-share pricing",
+   "description": "Return is hard to attribute, per-lead fees mount up on large jobs and clients quit, and revenue share depends on trusting the client's reporting. Beginners with no case studies are told to charge a modest fixed fee.",
+   "keywords": [
+    "monthly retainer",
+    "not pay per lead",
+    "no rev share",
+    "hard to attribute",
+    "$500 to $1,000 a month",
+    "trusting their reporting",
+    "fixed fee"
+   ],
+   "contradicts": [
+    "sell-leads-or-performance-deals"
+   ]
+  },
+  {
+   "id": "sell-leads-or-performance-deals",
+   "label": "Selling leads outright or taking a share of closed deals is easier to sell than a retainer",
+   "description": "The client funding ad spend while you take a percentage of closed deals limits their downside and makes the first deal easy; selling leads by the unit is described as easier than a monthly retainer.",
+   "keywords": [
+    "sell leads",
+    "pay per lead",
+    "percentage of closed deals",
+    "client funds ad spend",
+    "easier to sell",
+    "lead gen business",
+    "$25 margin per lead"
+   ],
+   "contradicts": [
+    "fixed-retainer-over-performance-pricing"
+   ]
+  },
+  {
+   "id": "lock-in-a-minimum-contract-length",
+   "label": "Contract length and price tier decide retention, and retention decides what you can spend to acquire",
+   "description": "Month-to-month clients cancel at month two or three before results appear, so a six-month minimum is recommended. Small-business clients at $1,500-$3,000 a month are cited as retaining four to six months while $300-$400 services retain 30-40 months, so agencies must go up-market or go cheap with near-zero delivery cost, the cheap model working as a setup fee plus a small high-margin monthly. Cutting churn from 10% to 3% is cited as making each customer worth four times more, and advertising costs rise permanently so lifetime value must keep rising.",
+   "keywords": [
+    "six month minimum",
+    "minimum term",
+    "not month to month",
+    "cancel at month two",
+    "contract length",
+    "before results appear",
+    "up market or cheap",
+    "mid-priced fails",
+    "retention by price",
+    "four to six months",
+    "30-40 months",
+    "big head long tail",
+    "setup fee plus monthly",
+    "churn",
+    "lifetime value",
+    "LTV",
+    "outspend competitors",
+    "quick win in 48 hours",
+    "first result fast",
+    "buyer's remorse",
+    "costs rise permanently",
+    "recover on repeat revenue"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "take-cash-up-front",
+   "label": "Collect cash up front before incurring delivery costs",
+   "description": "Invoices and receivables cannot fund growth; a 50% deposit, or a prepaid quarter, offsets acquisition cost.",
+   "keywords": [
+    "cash up front",
+    "50% deposit",
+    "prepay",
+    "receivables",
+    "before delivery",
+    "offsets acquisition cost"
+   ],
+   "contradicts": [
+    "deliver-before-payment",
+    "work-free-to-manufacture-proof"
+   ]
+  },
+  {
+   "id": "deliver-before-payment",
+   "label": "Do the work first and take payment only once the client sees the result",
+   "description": "Beginners are told to accept the risk of being cheated in exchange for trust.",
+   "keywords": [
+    "do the work first",
+    "payment after results",
+    "accept the risk",
+    "prove it then charge",
+    "no money up front"
+   ],
+   "contradicts": [
+    "take-cash-up-front"
+   ]
+  },
+  {
+   "id": "sell-by-video-with-the-price-up-front",
+   "label": "Replace the sales call with a short pre-recorded video that states the price and how to buy",
+   "description": "Withholding price until a long call is treated as wrong; video filters unqualified buyers without spending call time, and buyers prefer it because it removes scheduling and live pressure. Use a custom video while the offer is unproven, then one generic video.",
+   "keywords": [
+    "sell by video",
+    "price up front",
+    "no sales call",
+    "pre-recorded",
+    "how to buy",
+    "filters unqualified",
+    "removes pressure",
+    "state the price"
+   ],
+   "contradicts": [
+    "never-sell-without-a-live-call"
+   ]
+  },
+  {
+   "id": "never-sell-without-a-live-call",
+   "label": "Never email a proposal or try to close in writing; always get on a call",
+   "description": "You cannot hear objections or get commitment over email, and deals above roughly a thousand dollars need a human conversation before purchase.",
+   "keywords": [
+    "never email a proposal",
+    "always book a call",
+    "hear the objections",
+    "human conversation",
+    "commitment",
+    "walk them through it"
+   ],
+   "contradicts": [
+    "close-in-the-dm-without-a-call",
+    "sell-by-video-with-the-price-up-front"
+   ]
+  },
+  {
+   "id": "discount-mechanics",
+   "label": "Incentives only change behaviour above a threshold — discounts and partner commissions must be big enough to matter",
+   "description": "Discount a fixed amount rather than a percentage so margin does not scale down, cap it at the first N bookings, and note that discounts below about 50% are said not to change buyer behaviour. Standard 20% affiliate commissions are likewise said not to change partner behaviour; carving off a front-end piece the partner keeps entirely does. Referral schemes are described as lower risk than paid ads because you only pay once revenue arrives, and rewards can be status or access rather than cash.",
+   "keywords": [
+    "fixed amount discount",
+    "not a percentage",
+    "below 50% doesn't work",
+    "cap the discount",
+    "first ten bookings",
+    "margin",
+    "affiliate commission",
+    "20% doesn't work",
+    "let them keep 100%",
+    "front-end carve out",
+    "referral programme",
+    "pay only on revenue",
+    "status instead of cash"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "use-the-leads-or-sales-objective-only",
+   "label": "Run only lead or sales campaign objectives; never awareness, traffic or engagement",
+   "description": "The platform optimises literally for what you ask, so optimising for clicks or landing page views produces habitual clickers rather than buyers. Choose sales when the purchase happens on your site and leads when the conversion is an enquiry or booking. Small budgets in particular are told never to run awareness.",
+   "keywords": [
+    "campaign objective",
+    "leads objective",
+    "sales objective",
+    "never awareness",
+    "never traffic",
+    "never engagement",
+    "clickers not buyers",
+    "optimises literally",
+    "brand awareness is for big budgets"
+   ],
+   "contradicts": [
+    "invest-in-brand-and-awareness"
+   ]
+  },
+  {
+   "id": "invest-in-brand-and-awareness",
+   "label": "Direct-response-only advertising caps growth; shift budget into brand and awareness",
+   "description": "Direct response reaches only the small pool of buyers who need little information; one creator cites moving to roughly 70% brand and 30% direct response, which took eighteen months to show a return. Others say supply ads for every stage of the buyer journey and let the algorithm choose.",
+   "keywords": [
+    "brand advertising",
+    "awareness",
+    "70/30 split",
+    "18 months",
+    "direct response caps growth",
+    "full buyer journey",
+    "awareness consideration decision",
+    "give it every stage"
+   ],
+   "contradicts": [
+    "use-the-leads-or-sales-objective-only"
+   ]
+  },
+  {
+   "id": "broad-targeting-beats-interest-stacking",
+   "label": "Give the algorithm broad targeting; detailed interest stacking no longer helps",
+   "description": "Heavy interest and detailed targeting testing used to be standard and is now not worth the effort — the creative does the targeting. Several say leave detailed targeting blank entirely and put the effort into creative volume instead.",
+   "keywords": [
+    "broad targeting",
+    "leave interests blank",
+    "interest stacking is dead",
+    "creative does the targeting",
+    "algorithm finds them",
+    "no audience layering",
+    "used to work"
+   ],
+   "contradicts": [
+    "narrow-targeting-for-small-budgets"
+   ]
+  },
+  {
+   "id": "narrow-targeting-for-small-budgets",
+   "label": "With a small budget, target a very narrow slice of the market rather than competing broadly",
+   "description": "Most small advertisers target too broadly; the wider the geography, the tighter the interest targeting needs to be. Approaches cited include targeting fans of similar pages, and running parallel campaigns split by job title, function and a wildcard attribute.",
+   "keywords": [
+    "narrow slice",
+    "small budget",
+    "too broad",
+    "tighter targeting",
+    "fans of similar pages",
+    "job title targeting",
+    "parallel audience tests",
+    "niche audience"
+   ],
+   "contradicts": [
+    "broad-targeting-beats-interest-stacking"
+   ]
+  },
+  {
+   "id": "turn-off-audience-expansion",
+   "label": "Constrain the platform where it matters: no audience expansion, and geography limited to your service area",
+   "description": "Expansion serves ads outside your targeting and produces unqualified leads, and third-party audience networks carry largely bot traffic, so both should be switched off even when the platform predicts a lower cost per result. Geography should be limited to the radius the business would actually travel to serve — a dropped pin, roughly ten miles — but never narrower than where you can serve customers.",
+   "keywords": [
+    "audience expansion",
+    "advantage audience",
+    "turn it off",
+    "hard rule",
+    "unqualified leads",
+    "audience network",
+    "bot traffic",
+    "excluded placement",
+    "radius",
+    "drop a pin",
+    "ten miles",
+    "service area",
+    "geo targeting",
+    "local radius",
+    "don't narrow below where you serve"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "creative-is-the-main-lever",
+   "label": "Creative, and a constant supply of it, is the main lever — not budget, targeting or settings",
+   "description": "A bad ad with huge spend still fails while a good ad works on a small budget, and when lead volume is the problem the creative is usually the cause. Because ads fatigue you can never rest on one winner: higher budgets need more creatives as spend divides across them, winners should be duplicated with a niche word inserted, ads that never received spend should be relaunched separately — roughly 20% of them cited as winners — and weekly time booked for new creative.",
+   "keywords": [
+    "creative is king",
+    "not the budget",
+    "ad creative",
+    "hook",
+    "concept beats polish",
+    "creative is the cause",
+    "bad ad huge spend",
+    "ad fatigue",
+    "fresh creative",
+    "never rest on one ad",
+    "zombie campaign",
+    "relaunch unspent ads",
+    "duplicate the winner",
+    "one hour a week",
+    "more budget more creatives",
+    "two or three variations"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "static-images-beat-video",
+   "label": "If forced to choose one format, static images outperform video",
+   "description": "The platform can serve more statics per session than videos, and single image ads are cited as the top format in about 90% of campaigns on one platform.",
+   "keywords": [
+    "static beats video",
+    "single image",
+    "more per session",
+    "90% of campaigns",
+    "images outperform"
+   ],
+   "contradicts": [
+    "video-beats-static"
+   ]
+  },
+  {
+   "id": "video-beats-static",
+   "label": "Video creatives outperform static images because they hold attention",
+   "description": "Testing the same video with several on-screen hooks is preferred to making entirely different ads.",
+   "keywords": [
+    "video outperforms",
+    "holds attention",
+    "three hooks on one video",
+    "video ads win"
+   ],
+   "contradicts": [
+    "static-images-beat-video"
+   ]
+  },
+  {
+   "id": "ads-should-look-native",
+   "label": "Ads should look like organic content, and content that already worked organically makes the best ads",
+   "description": "People actively avoid anything that reads as an ad, so polished corporate creative underperforms humour, memes and off-brand visuals; a burner account following only your niche shows you what to model. Organic posts serve as free creative testing, and educational content repurposed as ads is cited as improving call quality, show-up rate and overall results versus purely sales-focused ads.",
+   "keywords": [
+    "native content",
+    "doesn't look like an ad",
+    "avoid corporate",
+    "memes",
+    "humour",
+    "off-brand",
+    "burner account",
+    "looks organic",
+    "organic winners as ads",
+    "free creative testing",
+    "repurpose YouTube videos",
+    "educational ads",
+    "boost what worked",
+    "show-up rate",
+    "already proved itself"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "use-native-lead-forms",
+   "label": "Use the platform's own instant lead form rather than sending traffic off-platform",
+   "description": "Native forms produce more leads at lower cost — cited at 30-50% less per impression — and prove the creative converts before you invest in a funnel. A softer version supplies both destinations in the same ad set and lets the algorithm decide per user.",
+   "keywords": [
+    "instant form",
+    "native lead form",
+    "stay on platform",
+    "cheaper per impression",
+    "more leads",
+    "start with lead forms",
+    "no landing page needed",
+    "both destinations",
+    "let the platform choose",
+    "same ad set",
+    "instant form or website",
+    "algorithm decides"
+   ],
+   "contradicts": [
+    "send-traffic-to-your-own-page"
+   ]
+  },
+  {
+   "id": "send-traffic-to-your-own-page",
+   "label": "Send ad traffic to your own website rather than a native lead form, because those leads are better",
+   "description": "Website leads are more intentional and higher quality — one claim puts landing page leads as better in about 90% of cases — and your own site feeds the pixel proper conversion data.",
+   "keywords": [
+    "landing page",
+    "own website",
+    "higher quality leads",
+    "more intentional",
+    "90% of cases",
+    "not an instant form",
+    "pixel data"
+   ],
+   "contradicts": [
+    "use-native-lead-forms"
+   ]
+  },
+  {
+   "id": "add-friction-and-verification-to-forms",
+   "label": "Add verification and higher-intent settings to lead forms to eliminate bogus leads",
+   "description": "One-time passcode phone verification and the higher-intent review step filter bots and low-intent submitters, at the cost of higher cost per lead and lower volume. Deleting the prefilled contact fields and re-adding them as typed questions is cited as fixing leads who do not remember submitting and never answer the phone.",
+   "keywords": [
+    "phone verification",
+    "one-time passcode",
+    "higher intent form",
+    "turn off autofill",
+    "prefilled fields",
+    "typed questions",
+    "filters bots",
+    "raises cost per lead"
+   ],
+   "contradicts": [
+    "keep-forms-short-for-volume"
+   ]
+  },
+  {
+   "id": "keep-forms-short-for-volume",
+   "label": "Keep lead forms short rather than adding questions as a quality filter",
+   "description": "No more than two qualifying questions on a new form; ask for email and phone, do not ask their budget — state your minimum price and ask them to confirm — and use verification rather than length to filter.",
+   "keywords": [
+    "short form",
+    "two questions maximum",
+    "don't ask budget",
+    "state your minimum price",
+    "email and phone",
+    "don't add questions",
+    "use verification instead"
+   ],
+   "contradicts": [
+    "add-friction-and-verification-to-forms"
+   ]
+  },
+  {
+   "id": "track-with-pixel-and-capi-first",
+   "label": "Get the pixel, conversion events and call tracking working before spending anything",
+   "description": "Without tracking the platform is advertising blind; the pixel alone is no longer sufficient since privacy changes, so a server-side conversions API and call tracking are also required. Attribution must be in place before scaling spend.",
+   "keywords": [
+    "pixel",
+    "conversions API",
+    "server side",
+    "call tracking",
+    "attribution",
+    "before you spend",
+    "advertising blind",
+    "iOS privacy",
+    "conversion events"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "optimise-for-revenue-not-cheap-leads",
+   "label": "Optimise campaigns for clients and revenue, not for the cheapest lead or appointment",
+   "description": "Pushing cost per lead down makes quality worse; optimising for lead events trains the algorithm to find form-fillers, who are a different population from buyers. Fixes cited include firing a custom engaged-lead event, sending qualified leads back as purchase events with a value, and judging blended return at business level rather than inside the ad account.",
+   "keywords": [
+    "cost per lead is the wrong metric",
+    "optimise for revenue",
+    "engaged lead event",
+    "send back purchase events",
+    "conversion value",
+    "blended ROAS",
+    "form fillers are not buyers",
+    "higher CPL higher revenue"
+   ],
+   "contradicts": [
+    "cost-per-lead-is-the-primary-metric"
+   ]
+  },
+  {
+   "id": "cost-per-lead-is-the-primary-metric",
+   "label": "Cost per lead is the metric to judge paid lead generation by",
+   "description": "When cost per lead is too high, change the offer or the form questions rather than abandoning the channel; other dashboard metrics should be ignored in favour of cost per conversion or return on ad spend.",
+   "keywords": [
+    "cost per lead",
+    "CPL",
+    "judge by CPL",
+    "ignore the rest of the dashboard",
+    "return on ad spend",
+    "cost per conversion",
+    "$20 to $30 per booked call"
+   ],
+   "contradicts": [
+    "optimise-for-revenue-not-cheap-leads"
+   ]
+  },
+  {
+   "id": "budget-minimums-and-the-learning-phase",
+   "label": "There is a minimum budget below which the algorithm cannot learn, and the account must be left alone to spend it properly",
+   "description": "A tiny test budget starves the platform of data; figures disagree at $5 a day, $25 a day per offer, one lead's cost per day per ad set, or whatever you can afford to pay to acquire a customer. Learning-phase length depends on conversion volume. Frequent edits should stop, a new ad given several days to a fortnight, and an ad not switched off while the platform is still spending on it. Boosting from the profile is cited at about 30% more expensive than the same ad through an ads account for no extra result.",
+   "keywords": [
+    "minimum budget",
+    "$25 a day",
+    "$5 a day",
+    "learning phase",
+    "starves the algorithm",
+    "daily budget not lifetime",
+    "afford to lose",
+    "cost of one lead per day",
+    "conversion volume",
+    "stop editing",
+    "let it run",
+    "fixed optimisation schedule",
+    "give it a few days",
+    "one to two weeks",
+    "don't kill it while it's spending",
+    "no end date",
+    "boost post",
+    "30% more expensive",
+    "use the ads manager",
+    "no extra result",
+    "profile boosting"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "manual-split-tests-one-ad-per-adset",
+   "label": "Split test manually with duplicated campaigns and one ad per ad set so every variation gets equal spend",
+   "description": "Do not use the platform's built-in A/B test feature; duplicate campaigns pointing at different pages or audiences and name ads only by the variable being tested.",
+   "keywords": [
+    "manual split test",
+    "one ad per ad set",
+    "duplicate the campaign",
+    "don't use the A/B tool",
+    "equal spend",
+    "name by variable",
+    "controlled test"
+   ],
+   "contradicts": [
+    "let-the-algorithm-allocate-spend"
+   ]
+  },
+  {
+   "id": "let-the-algorithm-allocate-spend",
+   "label": "Consolidate and let the algorithm allocate: campaign budget optimisation, dynamic creative and mass variations",
+   "description": "Turn on campaign-level budget so spend flows to the cheapest ad set, enable dynamic creative to test combinations, spin a winner into hundreds of AI variations, and consolidate to one offer, one campaign and one ad set so conversion data is not split.",
+   "keywords": [
+    "CBO",
+    "campaign budget optimisation",
+    "dynamic creative",
+    "let the algorithm decide",
+    "consolidate",
+    "one ad set",
+    "hundreds of variations",
+    "don't split the data"
+   ],
+   "contradicts": [
+    "manual-split-tests-one-ad-per-adset"
+   ]
+  },
+  {
+   "id": "retarget-with-a-different-offer",
+   "label": "Retarget people who engaged, and show them a different offer rather than repeating the declined one",
+   "description": "Warm audiences of past visitors and customers are where beginners get their first results; the retargeting stack should open with an objection-handling ad built from the reasons prospects gave for not booking.",
+   "keywords": [
+    "retargeting",
+    "warm audience",
+    "past visitors",
+    "different offer",
+    "objection-handling ad",
+    "don't repeat the offer",
+    "phone the people who opted in"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "the-landing-page-deserves-the-attention",
+   "label": "Most advertisers over-invest in ads and under-invest in the landing page",
+   "description": "Mirroring the winning ad headline on the landing page is cited as lifting conversion by 15-20%, rewriting page messaging alone as halving cost per lead, and swapping the third-party tools in the funnel as producing some of the largest gains. Every extra page, field and click lowers conversion.",
+   "keywords": [
+    "landing page",
+    "90/10 mistake",
+    "mirror the headline",
+    "message match",
+    "rewrite the page",
+    "strip the path",
+    "fewer clicks",
+    "funnel tools",
+    "20% conversion"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "dont-buy-third-party-leads",
+   "label": "Do not buy leads from lead-reseller platforms; own your own lead flow instead",
+   "description": "Bought leads are sold to several competitors at once, mostly do not answer because they never wanted to speak to anyone, and vendor ads are optimised for form fills rather than buyers. Owning the ads, site and listing also lets you turn lead flow up or down.",
+   "keywords": [
+    "lead reseller",
+    "bought leads",
+    "sold to five contractors",
+    "don't answer the phone",
+    "own your lead flow",
+    "third-party vendor",
+    "supplement only",
+    "optimised for form fills"
+   ],
+   "contradicts": [
+    "buying-leads-is-the-fastest-switch-on"
+   ]
+  },
+  {
+   "id": "buying-leads-is-the-fastest-switch-on",
+   "label": "Buying from lead-generation vendors is the quickest channel to switch on because it is pay-for-result",
+   "description": "No build is required and you pay only for results, which makes it the fastest available source.",
+   "keywords": [
+    "buy leads",
+    "pay for result",
+    "quickest to switch on",
+    "no build required",
+    "vendor leads"
+   ],
+   "contradicts": [
+    "dont-buy-third-party-leads"
+   ]
+  },
+  {
+   "id": "creative-specs-format-and-hook",
+   "label": "Creative must be built to platform specs: correct aspect ratios, captions, bold text and the offer readable in two seconds",
+   "description": "Purpose-build for each aspect ratio rather than stretching one square image, add captions and text overlays for sound-off viewing, lead with one message per ad, use short copy with a clear call to action, and avoid carousels for lead generation. Square is favoured for occupying more feed; horizontal matters least.",
+   "keywords": [
+    "aspect ratio",
+    "9:16",
+    "square 1080x1080",
+    "captions",
+    "sound off",
+    "first two seconds",
+    "one message per ad",
+    "avoid carousel",
+    "specific CTA not learn more",
+    "short ad copy"
+   ],
+   "contradicts": [
+    "long-form-ad-copy-gives-the-algorithm-context"
+   ]
+  },
+  {
+   "id": "long-form-ad-copy-gives-the-algorithm-context",
+   "label": "Long-form ad copy now helps because the creative does the targeting and gives the algorithm context",
+   "description": "More words give the platform more signal about who the ad is for.",
+   "keywords": [
+    "long copy",
+    "gives the algorithm context",
+    "creative does the targeting",
+    "more text",
+    "long-form ad"
+   ],
+   "contradicts": [
+    "creative-specs-format-and-hook"
+   ]
+  },
+  {
+   "id": "model-competitor-ads",
+   "label": "Use the ad library to find and model competitors' long-running ads",
+   "description": "An ad still running after six months is almost certainly profitable, so scrape and model winners before building your own. Some extend this to copying 80% of a proven operator's whole model.",
+   "keywords": [
+    "ad library",
+    "model competitors",
+    "long-running ads",
+    "six months means profitable",
+    "scrape competitor ads",
+    "copy 80%",
+    "reverse engineer"
+   ],
+   "contradicts": [
+    "dont-copy-competitor-ads"
+   ]
+  },
+  {
+   "id": "dont-copy-competitor-ads",
+   "label": "Research competitors' ads but do not copy them; differentiated creative is what produces outsized returns",
+   "description": "Copying puts you in the same undifferentiated pool.",
+   "keywords": [
+    "don't copy",
+    "differentiate",
+    "outsized returns",
+    "research but don't replicate",
+    "be different"
+   ],
+   "contradicts": [
+    "model-competitor-ads"
+   ]
+  },
+  {
+   "id": "linkedin-costs-more-but-qualifies-better",
+   "label": "LinkedIn ads cost far more per lead but produce a lower cost per acquisition because the leads are qualified",
+   "description": "One case cites three times Facebook's cost per lead with a lower cost per customer. Others argue Meta reaches the same B2B decision makers at a fraction of the impression cost when the creative names the specific problem.",
+   "keywords": [
+    "LinkedIn ads",
+    "three times the CPL",
+    "lower CPA",
+    "more qualified",
+    "Meta reaches B2B cheaper",
+    "CPM",
+    "precise job title targeting"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "paid-takes-months-and-money-to-work",
+   "label": "A paid channel loses money at first and can take many months to become reliably profitable",
+   "description": "Expect losses in month one improving monthly, several times return by month four, and up to eighteen months before a channel is dependably profitable. Acquisition cost only ever rises, and returns fall as you scale — absolute profit at scale beats a high return on a tiny budget.",
+   "keywords": [
+    "month one loses money",
+    "month four",
+    "year and a half",
+    "CAC only rises",
+    "ROAS falls as you scale",
+    "absolute profit",
+    "first run performs best",
+    "degrades from there"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "content-is-a-trust-multiplier",
+   "label": "Content is a slow-compounding trust multiplier that lifts other channels rather than a channel of its own",
+   "description": "Prospects check your website and profiles after any outreach, so content should pre-handle objections; cold outreach performs much better when they have already met you. It demands time rather than money, has no immediate return, and widens the geographic radius customers will travel from. One creator explicitly reverses earlier advice that content was a waste of time for lead generation.",
+   "keywords": [
+    "trust multiplier",
+    "they check you afterwards",
+    "pre-handle objections",
+    "content raises other channels",
+    "used to be a waste of time",
+    "findable presence",
+    "not standalone",
+    "long game",
+    "no immediate ROI",
+    "compounds",
+    "takes time",
+    "organic is slow",
+    "not bottom of funnel",
+    "widens the radius"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "reverse-engineer-content-from-the-offer",
+   "label": "Every post must serve an objective reverse-engineered from what you sell, and end in an explicit ask",
+   "description": "Posting without an objective is not a strategy; content should generate, nurture or convert, with a deliberate weekly split across funnel stages. Audiences will not take the next step unless told what it is and why, so every piece needs a call to action that is clear rather than clever, states the exact next action and gives a reason to act. The value-to-ask ratio cited is roughly 80/20, or three and a half gives to every ask.",
+   "keywords": [
+    "content objective",
+    "reverse engineer from the offer",
+    "generate nurture convert",
+    "not a strategy",
+    "funnel split",
+    "one top three middle one bottom",
+    "content pillars",
+    "80/20",
+    "give to ask ratio",
+    "3.5 to 1",
+    "mostly value",
+    "don't always pitch",
+    "call to action",
+    "every post",
+    "explicit invitation",
+    "tell them the next step",
+    "clear not clever",
+    "give a reason",
+    "make an offer not take an order"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "stories-and-opinions-beat-tips",
+   "label": "Stories, opinions and first-hand experience stop the scroll; industry facts and generic tips do not",
+   "description": "Generic tips-and-advice content used to work and no longer does; because AI can generate content instantly, the only things it cannot reproduce — your own experience, opinions and stories — are the differentiator.",
+   "keywords": [
+    "stories",
+    "personal stories",
+    "strong opinions",
+    "tips don't work any more",
+    "AI can't reproduce it",
+    "first-hand experience",
+    "authenticity",
+    "story inventory",
+    "only durable differentiator"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "the-hook-decides-everything",
+   "label": "The hook — the first line or first seconds — is the highest-leverage part of any advertising or content",
+   "description": "Cutting three seconds of preamble is cited as taking a video from 40,000 to 780,000 views; a proof, promise, plan structure is offered for hooks across content, ads and cold outbound, and naming the target job title in the first line filters who engages.",
+   "keywords": [
+    "hook",
+    "first line",
+    "first three seconds",
+    "stop the scroll",
+    "proof promise plan",
+    "cut the preamble",
+    "name the job title",
+    "opening line"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "comment-keyword-hand-raiser-posts",
+   "label": "Post an offer that asks interested people to comment a keyword, then work the responders",
+   "description": "A commenter has self-identified and given permission, which is why it converts; one claim is over 5,000 leads a day from free organic posts. Follow a fixed DM sequence: deliver the magnet, ask one clarifying question, then recommend. Some replace one-to-one outreach entirely by mass-adding the target market and posting the offer.",
+   "keywords": [
+    "comment a keyword",
+    "hand raiser",
+    "DM me the word",
+    "self-identified",
+    "5,000 leads a day",
+    "three-step DM sequence",
+    "clarifying question",
+    "mass add then post",
+    "they found you"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "casual-text-posts-beat-polished-video",
+   "label": "Short casual text posts now outperform long-form and polished video for starting conversations",
+   "description": "Polished video and carousels read as advertising and get scrolled past, whereas casual text reads as real; platforms have shifted to rewarding conversation over production.",
+   "keywords": [
+    "short text posts",
+    "casual",
+    "polished video gets scrolled",
+    "carousels",
+    "reads as advertising",
+    "platforms reward conversation",
+    "low production"
+   ],
+   "contradicts": [
+    "video-builds-trust-fastest"
+   ]
+  },
+  {
+   "id": "video-builds-trust-fastest",
+   "label": "Video builds trust faster than text or audio because familiarity with a face and voice substitutes for meeting you",
+   "description": "Seeing and hearing a person shortens the path to a conversation.",
+   "keywords": [
+    "video builds trust",
+    "face and voice",
+    "familiarity",
+    "faster than text",
+    "substitutes for a meeting"
+   ],
+   "contradicts": [
+    "casual-text-posts-beat-polished-video"
+   ]
+  },
+  {
+   "id": "engage-rather-than-broadcast",
+   "label": "Platforms reward genuine two-way conversation, and fake AI engagement is recognisable",
+   "description": "Reply to every comment quickly — it returns the same viewer for a second view — ask questions that start discussions, and comment on other people's content, since comments now function as content. Mass-generated AI comments read as spam and are counterproductive.",
+   "keywords": [
+    "reply to comments",
+    "two-way",
+    "engagement not broadcasting",
+    "comment on others",
+    "comments are content",
+    "reply immediately",
+    "start discussions",
+    "AI comments",
+    "fake engagement",
+    "reads as spam",
+    "recognisable",
+    "counterproductive"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "posting-cadence-numbers",
+   "label": "Hit a specific posting cadence, but judge it on reaching the right people rather than on reach",
+   "description": "Prescriptions disagree: three static posts plus three to five reels a week, seven times a week, five times a week, at least twice a week, stories spread across the day. Supporting mechanics include posting at peak hours, editing inside the platform's own app, three to four hashtags rather than a block, and trending audio with fewer than 20,000 videos. Audience size is treated as irrelevant — most users never engage, a six-figure business needs a handful of the right customers, and content should be aimed at the prospects you deliberately connected with rather than at virality.",
+   "keywords": [
+    "post frequency",
+    "five times a week",
+    "seven a week",
+    "twice a week",
+    "three to five reels",
+    "peak hours",
+    "native editing tools",
+    "three to four hashtags",
+    "local hashtags",
+    "trending audio",
+    "follower count doesn't matter",
+    "virality is unnecessary",
+    "90-99% never engage",
+    "a handful of customers",
+    "relevance",
+    "aim at your connections",
+    "low-intent viewers"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "repurpose-one-asset-everywhere",
+   "label": "Produce one pillar asset and cut it into everything rather than creating new content per channel",
+   "description": "A single piece feeds a month of derivative posts and every channel buyers research on; some automate this from a published blog feed into scheduled social posts.",
+   "keywords": [
+    "pillar content",
+    "repurpose",
+    "cut it up",
+    "one asset many channels",
+    "month of posts",
+    "RSS to social",
+    "derivative posts"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "help-in-communities-without-pitching",
+   "label": "Join the communities where your buyers already are and help without pitching until you are the known expert",
+   "description": "Members detect and reject obvious lead poaching, so contribute slowly; niche forums and Reddit are described as underrated because the audience is already asking for help, and replying early to new threads or to ranking threads with few comments earns years of views.",
+   "keywords": [
+    "communities",
+    "forums",
+    "Reddit",
+    "don't pitch",
+    "be helpful",
+    "lead poaching",
+    "answer questions",
+    "reply early to threads",
+    "become the known expert",
+    "join their groups not yours"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "seo-still-works-for-local",
+   "label": "SEO is not dead; local search in particular remains a large, winnable opportunity",
+   "description": "Urgent local buyers still search and call the top result rather than asking a chatbot, incumbent local competitors have not updated their sites in a decade, and search traffic keeps paying out for years because the intent is high.",
+   "keywords": [
+    "SEO is not dead",
+    "local SEO",
+    "still works",
+    "urgent buyers search",
+    "outdated competitors",
+    "high intent",
+    "keeps paying",
+    "5 trillion searches"
+   ],
+   "contradicts": [
+    "the-old-seo-playbook-is-dead"
+   ]
+  },
+  {
+   "id": "the-old-seo-playbook-is-dead",
+   "label": "The old SEO playbook of keyword, optimised content and backlinks no longer produces traffic",
+   "description": "AI-produced content flooded results and the response has removed even legitimate sites; simply having a website stopped generating leads, and off-page link building is now the thing most likely to be punished by an update.",
+   "keywords": [
+    "old playbook is dead",
+    "no longer works",
+    "AI flooded search",
+    "legitimate sites removed",
+    "having a website isn't enough",
+    "link building gets punished",
+    "algorithm updates"
+   ],
+   "contradicts": [
+    "backlinks-still-matter",
+    "seo-still-works-for-local"
+   ]
+  },
+  {
+   "id": "ai-answers-are-taking-the-clicks",
+   "label": "AI answers in search are absorbing clicks that used to reach websites",
+   "description": "One figure puts clicks to the top-ranking page down roughly 35% when an AI overview shows, and a large share of searches now end with no click at all; rankings also increasingly favour large brands.",
+   "keywords": [
+    "AI overview",
+    "zero click",
+    "35% fewer clicks",
+    "AI absorbs clicks",
+    "big brands favoured",
+    "search is harder",
+    "no click searches"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "no-separate-ai-search-strategy",
+   "label": "There is no separate strategy for AI search; citation comes from foundational SEO",
+   "description": "AI tools retrieve from search results, so ranking well is what gets you cited, and inbound links still matter for both. For a local service business, ranking on Google is worth more than appearing in AI answers.",
+   "keywords": [
+    "no GEO strategy",
+    "same as SEO",
+    "AI retrieves from search",
+    "foundational SEO",
+    "ranking is what gets cited",
+    "links matter for both"
+   ],
+   "contradicts": [
+    "structure-content-answer-first-for-ai"
+   ]
+  },
+  {
+   "id": "structure-content-answer-first-for-ai",
+   "label": "Structure content answer-first so AI engines cite it, inverting how SEO taught you to write",
+   "description": "Only about a fifth of marketers are optimising for citation by answer engines, which makes it a current edge.",
+   "keywords": [
+    "answer first",
+    "AI citation",
+    "GEO",
+    "inverts keyword-first",
+    "a fifth of marketers",
+    "edge",
+    "optimise for answer engines"
+   ],
+   "contradicts": [
+    "no-separate-ai-search-strategy"
+   ]
+  },
+  {
+   "id": "target-low-difficulty-high-intent-keywords",
+   "label": "Target low-competition, high-intent, long-tail terms rather than broad head keywords",
+   "description": "Thresholds cited include keyword difficulty of 30 or below and at least 100 monthly searches; prioritise emergency and buying-intent terms, exclude competitors' brand names, and accept that prioritisation is the hard part rather than ranking for everything.",
+   "keywords": [
+    "long tail",
+    "low difficulty",
+    "KD 30",
+    "100 searches a month",
+    "buying intent",
+    "emergency terms",
+    "bottom of funnel keywords",
+    "don't chase every keyword",
+    "competitor brand terms"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "blog-content-lifts-the-money-pages",
+   "label": "Informational blog content builds the topical authority that lifts commercial pages",
+   "description": "Interrelated content clusters should be built before chasing backlinks, and internal links inside body content pass that earned authority up to the revenue pages. Building one cluster is said to take months of full-time work.",
+   "keywords": [
+    "topical authority",
+    "content clusters",
+    "internal links",
+    "blog lifts service pages",
+    "informational intent",
+    "months of work",
+    "body links not navigation"
+   ],
+   "contradicts": [
+    "blogging-is-the-wrong-deliverable-for-local"
+   ]
+  },
+  {
+   "id": "blogging-is-the-wrong-deliverable-for-local",
+   "label": "Weekly blog posts are the wrong deliverable for a local business",
+   "description": "Local search is won on the Google Business Profile and service pages, not on blog volume, and an agency selling weekly posts to a local business should be avoided.",
+   "keywords": [
+    "weekly blog posts are wrong",
+    "local business",
+    "avoid that agency",
+    "not the deliverable",
+    "GBP not blogging"
+   ],
+   "contradicts": [
+    "blog-content-lifts-the-money-pages"
+   ]
+  },
+  {
+   "id": "match-the-serp-and-model-the-top-results",
+   "label": "Read the live results page to infer intent, then match the format of what already ranks",
+   "description": "Copy the average word count, headings and structure of the top pages while differentiating the substance; a lower-authority brand can outrank big brands with a comparison roundup rather than competing head-on.",
+   "keywords": [
+    "match the SERP",
+    "search intent",
+    "analyse the top three",
+    "word count and headings",
+    "comparison roundup",
+    "format match",
+    "differentiate the substance"
+   ],
+   "contradicts": [
+    "copying-the-top-page-no-longer-ranks"
+   ]
+  },
+  {
+   "id": "copying-the-top-page-no-longer-ranks",
+   "label": "Copying the top-ranking page and adding a few points no longer ranks",
+   "description": "Google has stopped rewarding writing aimed at algorithms; write for the person searching, interrogating what they actually want and what format helps, because no particular word count is rewarded.",
+   "keywords": [
+    "skyscraper is dead",
+    "write for the person",
+    "not for the engine",
+    "word count is the wrong question",
+    "stopped rewarding",
+    "interrogate the searcher"
+   ],
+   "contradicts": [
+    "match-the-serp-and-model-the-top-results"
+   ]
+  },
+  {
+   "id": "service-by-location-pages",
+   "label": "Build a dedicated page for every service crossed with every location you serve",
+   "description": "Roughly thirty pages structured as homepage, category and service pages mirroring the business profile, with the primary service and city in the homepage title tag and internal links between related pages. Most local competitors have unoptimised title tags.",
+   "keywords": [
+    "service pages",
+    "location pages",
+    "service plus city",
+    "title tag",
+    "30 pages",
+    "category pages",
+    "internal links",
+    "exact match domain",
+    "local landing page"
+   ],
+   "contradicts": [
+    "near-duplicate-location-pages-get-penalised"
+   ]
+  },
+  {
+   "id": "near-duplicate-location-pages-get-penalised",
+   "label": "Mass-produced near-identical service-plus-city pages are a negative signal",
+   "description": "Location pages must carry genuine local detail — landmarks, local problems, FAQs — rather than a template with the city swapped, and hundreds of near-duplicates get punished.",
+   "keywords": [
+    "duplicate pages",
+    "near-identical",
+    "negative signal",
+    "genuine local detail",
+    "landmarks",
+    "don't spin the city",
+    "template pages"
+   ],
+   "contradicts": [
+    "service-by-location-pages"
+   ]
+  },
+  {
+   "id": "the-business-profile-is-the-local-lever",
+   "label": "Local ranking is won on the Google Business Profile, not the website",
+   "description": "Map pack position is decided by proximity, relevance and authority, and only the last two can be influenced. Prescriptions include multiple categories, at least twenty listed services, every field filled to its character limit, at least twenty real photos, weekly geotagged uploads, and consistency with the website. Most local clicks go to the top three listings.",
+   "keywords": [
+    "Google Business Profile",
+    "GBP",
+    "map pack",
+    "top three",
+    "multiple categories",
+    "twenty services",
+    "fill every field",
+    "twenty photos",
+    "geotagged photos",
+    "proximity relevance authority",
+    "free listing"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "reviews-are-an-irreplaceable-signal",
+   "label": "Reviews are an irreplaceable trust signal with no shortcut around them",
+   "description": "Prospects compare you against competitors on them, offering a place to leave reviews increases bookings, and review generation is described as the easiest service to sell and deliver. A personal follow-up sequence is cited at 10-20% conversion versus 2-3% for an automated link on an invoice.",
+   "keywords": [
+    "Google reviews",
+    "trust signal",
+    "no shortcut",
+    "review generation",
+    "ask for reviews",
+    "2-3% versus 10-20%",
+    "reputation management",
+    "social proof lowers risk"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "backlinks-still-matter",
+   "label": "Backlinks still help pages rank and still matter for AI visibility",
+   "description": "Every page needs at least one external link pointing at it to prove it is not low-quality output; chamber of commerce memberships are named as the strongest local trust link, and outreach converts better when you pitch a genuinely useful piece replacing an outdated link than when you ask for a link to a sales page.",
+   "keywords": [
+    "backlinks",
+    "inbound links",
+    "external link per page",
+    "chamber of commerce",
+    "link intersect",
+    "replace an outdated link",
+    "directory listings",
+    "link building outreach"
+   ],
+   "contradicts": [
+    "cheap-backlink-packages-get-you-penalised",
+    "the-old-seo-playbook-is-dead"
+   ]
+  },
+  {
+   "id": "cheap-backlink-packages-get-you-penalised",
+   "label": "Cheap bulk backlink packages use private blog networks and will get a site penalised",
+   "description": "Paid link volume is the fastest route to a manual penalty or blacklisting.",
+   "keywords": [
+    "cheap backlinks",
+    "PBN",
+    "private blog network",
+    "penalised",
+    "blacklisted",
+    "bulk link packages"
+   ],
+   "contradicts": [
+    "backlinks-still-matter"
+   ]
+  },
+  {
+   "id": "ai-written-content-is-fine-if-helpful",
+   "label": "AI-written content is fine if it is helpful, but how fast you publish and index it matters",
+   "description": "Google is said to judge helpfulness rather than authorship, though advocates insist output be rewritten in the owner's voice with real stories and guided by human expertise. One position says ramp publishing gradually because a volume spike triggers penalties, another sets an automated cadence from several articles a day to one a week; manually requesting indexing is cited as getting a page indexed within a day, and an uncrawlable page wastes every other effort.",
+   "keywords": [
+    "AI content is fine",
+    "judged on helpfulness",
+    "rewrite in your own voice",
+    "own stories",
+    "AI as an assistant",
+    "AI sites look alike",
+    "brand information",
+    "ramp gradually",
+    "volume spike",
+    "penalty",
+    "several articles a day",
+    "publishing cadence",
+    "request indexing",
+    "Search Console",
+    "crawl and index"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "technical-fixes-move-local-rankings",
+   "label": "Technical work alone — speed, schema, sitemap, image compression — can lift local rankings quickly",
+   "description": "Held directly against the claim that page-speed work will not move rankings in a competitive market with sophisticated incumbents.",
+   "keywords": [
+    "technical SEO",
+    "page speed",
+    "schema",
+    "sitemap",
+    "image compression",
+    "quick wins",
+    "lifts rankings"
+   ],
+   "contradicts": [
+    "technical-work-wont-move-competitive-rankings"
+   ]
+  },
+  {
+   "id": "technical-work-wont-move-competitive-rankings",
+   "label": "Technical and page-speed work will not move rankings in a competitive market",
+   "description": "Where incumbents are sophisticated, technical parity buys nothing.",
+   "keywords": [
+    "technical won't help",
+    "competitive market",
+    "sophisticated incumbents",
+    "won't move the needle"
+   ],
+   "contradicts": [
+    "technical-fixes-move-local-rankings"
+   ]
+  },
+  {
+   "id": "rank-your-own-site-and-sell-the-leads",
+   "label": "Rank your own site in a niche and sell the leads it produces to local businesses",
+   "description": "You never have to deliver the underlying service; pick categories whose incumbents are weak at search, where a lead is worth $100 or more, and where educational content can generate the traffic rather than a paid bidding war. Ranking your own site first also supplies the case study.",
+   "keywords": [
+    "rank and rent",
+    "sell the leads",
+    "weak incumbents",
+    "lead worth $100",
+    "senior living",
+    "pool construction",
+    "educational content traffic",
+    "your own site as the case study"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "build-an-owned-email-list",
+   "label": "Build an owned email list because every borrowed platform runs on algorithms that can change overnight",
+   "description": "A list of loyal subscribers is described as one of the most valuable assets a business can own, and search traffic can disappear overnight so sources must be diversified from the start.",
+   "keywords": [
+    "own your list",
+    "email list",
+    "borrowed platform",
+    "algorithms change",
+    "diversify traffic",
+    "most valuable asset",
+    "don't rely on one source"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "email-often-and-plainly",
+   "label": "Email frequently and plainly to a segmented, pruned list",
+   "description": "About three times a week is cited as best, with more converting more up to the point recipients feel bothered; plain-text-looking emails with no images and one or two links perform best and the PS is the most-read part after the subject line. Who receives it is said to matter more than how well it is written, with segmentation cited as producing a large multiple in return. Emailing disengaged contacts damages the domain for everyone on the list, unsubscribing should be easy, replies improve standing with the mail server, privacy changes broke open tracking so click-through is now primary, and about 17% of B2B marketing emails are said never to reach the inbox.",
+   "keywords": [
+    "three times a week",
+    "plain text",
+    "no images",
+    "one or two links",
+    "PS line",
+    "promotions tab",
+    "email frequency",
+    "batch write",
+    "preview text",
+    "segmentation",
+    "who receives it",
+    "760% ROI",
+    "matters more than the copy",
+    "segment the list",
+    "by attribute",
+    "deliverability",
+    "prune the list",
+    "easy unsubscribe",
+    "disengaged contacts",
+    "reply improves standing",
+    "17% never arrive",
+    "domain reputation",
+    "open rate broken",
+    "Apple privacy",
+    "click-through rate",
+    "still indicates inbox placement",
+    "36% open",
+    "8.5% CTR",
+    "best send day",
+    "10-12 and 1-3"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "nurture-between-optin-and-the-call",
+   "label": "Show-up and close rates are won in the automated sequence between the opt-in and the call",
+   "description": "A four-touch email and SMS sequence is cited as raising show-up from 40% to 70% and more than doubling close rate. Every pre-call message should provoke a reply, because a prospect who has not replied by call day is likely to no-show. Supporting tactics: frame the meeting as a strategy, roadmap or competitor-breakdown session, tease a specific finding, never send a plain confirmation, run a same-day reminder cadence, and double-book unengaged slots.",
+   "keywords": [
+    "nurture sequence",
+    "pre-call sequence",
+    "show-up rate",
+    "40% to 70%",
+    "provoke a reply",
+    "reminder subsequence",
+    "email follow-up lift",
+    "points back to the booking page",
+    "show up rate",
+    "strategy session",
+    "roadmap call",
+    "tease a finding",
+    "never just confirming",
+    "reminder cadence",
+    "double book",
+    "competitor breakdown",
+    "promise they'll learn something"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "speed-to-lead",
+   "label": "Contact an inbound lead within minutes; interest decays almost immediately",
+   "description": "Windows cited range from within the first minute to within five minutes, with claimed effects including a 391% increase in conversions, 25% more wins than replying at thirty minutes, and a 20% lift in lead-to-appointment rate from simply calling faster. Follow-up is recommended by text as well as phone.",
+   "keywords": [
+    "speed to lead",
+    "within five minutes",
+    "within 60 seconds",
+    "391%",
+    "call them immediately",
+    "respond fast",
+    "interest decays",
+    "text and call"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "qualify-before-a-human-takes-the-call",
+   "label": "Put a qualification step in front of every salesperson's calendar and make prospects prove they fit",
+   "description": "Raw meeting counts are meaningless without it — fifty meetings that produce no buyers are worthless, activity volume is a vanity metric when the people contacted could never buy, and a lead who never opens the follow-up converts at zero. The positioning version inverts the sale: open by saying you need to check fit, state criteria that let them self-select, and close by telling them they qualify rather than asking if they want to move forward. It only works if the selectivity is genuine and you do not need every deal.",
+   "keywords": [
+    "qualification step",
+    "vanity metric",
+    "meetings that produce nothing",
+    "activity volume",
+    "form fill is not a lead",
+    "downstream engagement",
+    "before a salesperson takes it",
+    "make them qualify",
+    "good fit check",
+    "selectivity",
+    "self-select",
+    "you qualify",
+    "don't ask to move forward",
+    "must be genuine",
+    "not desperate"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "pressure-selling-fails",
+   "label": "Hard selling produces buyer's remorse and difficult clients; respect the prospect's autonomy instead",
+   "description": "Explicitly stating they are free to refuse raises compliance, and giving a hesitant prospect a way out is claimed to make them recommit about nine times in ten. Pressure produces defensiveness; attaching any reason at all to a request raises compliance.",
+   "keywords": [
+    "hard selling doesn't work",
+    "buyer's remorse",
+    "autonomy",
+    "free to refuse",
+    "pull back",
+    "offer more time",
+    "reactance",
+    "give a reason"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "demonstrated-proof-beats-claims",
+   "label": "Only demonstrated results and named proof move a sceptical prospect",
+   "description": "Proof — reviews, results, testimonials — is said to matter more than the offer or the promise. A live demo from the prospect's own industry beats claiming you can do the work, and a portfolio aimed at your target client attracts that client type even when speculative. On calls, a status-alignment line naming recognisable nearby customers establishes you as a peer.",
+   "keywords": [
+    "proof",
+    "demonstrated results",
+    "live demo",
+    "from their industry",
+    "credentials don't overcome scepticism",
+    "portfolio",
+    "case studies",
+    "show don't tell",
+    "local social proof",
+    "named customers",
+    "have you heard of us",
+    "status alignment",
+    "peers of the prospect",
+    "nearby clients"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "run-the-same-process-every-time",
+   "label": "Run the same documented process every time, and use AI to review and support it",
+   "description": "The difference between an amateur and a professional is following the same process every single time: script the sales process with talk tracks for every known objection, train new people on recordings of winning calls, copy the best performer exactly at double their volume, and keep meticulous CRM notes. AI is used on top of that — reviewing call transcripts, roleplaying objections as the buyer, running daily prospect briefings, pipeline reviews and win-loss analysis, and splitting bulk research across parallel sub-agents — with the caveat that generic pre-built automations underperform customised ones.",
+   "keywords": [
+    "same process every time",
+    "script the sales process",
+    "talk tracks",
+    "train on recordings",
+    "copy the top performer",
+    "CRM notes",
+    "repeatable system",
+    "documented",
+    "AI call review",
+    "roleplay",
+    "transcripts",
+    "daily briefing",
+    "win-loss analysis",
+    "pipeline review",
+    "sub-agents",
+    "custom automation not pre-built",
+    "AI agent research"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "keep-a-human-in-the-close",
+   "label": "Buyers will not buy from a fully automated bot, so a human must stay in the closing conversation",
+   "description": "Prospecting and research can be automated; the conversation that takes money cannot. Human review of AI output is treated as mandatory.",
+   "keywords": [
+    "human in the loop",
+    "won't buy from a bot",
+    "human closes",
+    "review the output",
+    "automate prospecting not selling",
+    "manually filter"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "track-the-whole-funnel",
+   "label": "Track every funnel step and audit where your clients actually came from",
+   "description": "Marketing is improved across the whole funnel — spend, leads, appointments, close rate, average ticket — rather than judged on binary sale or no-sale outcomes; review weekly or in real time and run many small single-variable experiments. Auditing the last several clients and tracing each referral to its true origin is recommended because the credited source is often not the real one.",
+   "keywords": [
+    "track the funnel",
+    "leading indicators",
+    "spend to leads to appointments",
+    "close rate",
+    "average ticket",
+    "review weekly",
+    "single-variable experiments",
+    "you can't improve what you don't measure",
+    "audit your last five clients",
+    "attribution",
+    "trace the referral",
+    "true origin",
+    "credited source is wrong",
+    "where did they come from"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "block-daily-time-for-lead-generation",
+   "label": "Block fixed daily time for lead generation and never stop when you win a client",
+   "description": "Prescriptions include the first four hours of every day, ten to fifteen hours a week, a third of working time, and a daily checklist of seven to ten actions. Stopping when a client is won is named as the cause of the feast-and-famine cycle; consistent small activity beats occasional bursts, and most service providers are said to be only a quarter as visible as they need to be.",
+   "keywords": [
+    "first four hours",
+    "ten to fifteen hours a week",
+    "a third of your time",
+    "daily checklist",
+    "seven to ten actions",
+    "do it before anything else",
+    "gamify",
+    "time blocking",
+    "never stop marketing",
+    "feast and famine",
+    "consistency",
+    "small and steady",
+    "visibility",
+    "double your visibility",
+    "don't go quiet"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "the-owner-must-stay-involved",
+   "label": "The owner must stay deeply involved in marketing; handing it entirely to an agency or a hire fails",
+   "description": "An outside media buyer only sees platform metrics, not calls and CRM outcomes, so the owner must feed downstream data back and inspect the numbers personally. A founder who delegates marketing away dilutes the business's strongest marketing skill.",
+   "keywords": [
+    "owner involvement",
+    "don't hand it to an agency",
+    "media buyer only sees platform metrics",
+    "feed back CRM data",
+    "inspect the numbers yourself",
+    "founder-led marketing"
+   ],
+   "contradicts": [
+    "outsource-lead-generation-early"
+   ]
+  },
+  {
+   "id": "outsource-lead-generation-early",
+   "label": "Lead generation should be the first thing a service business outsources once it can afford to",
+   "description": "The owner's time is worth more on sales and delivery; record yourself doing the activity so the process can be documented and handed over, and calculate an hourly buyback rate to decide what to delegate.",
+   "keywords": [
+    "outsource lead gen",
+    "first thing to delegate",
+    "buyback rate",
+    "record yourself",
+    "document the process",
+    "owner's time is worth more",
+    "hand it off"
+   ],
+   "contradicts": [
+    "the-owner-must-stay-involved"
+   ]
+  },
+  {
+   "id": "copy-a-proven-operator",
+   "label": "Find someone already succeeding and copy their model rather than inventing one",
+   "description": "Buying a proven blueprint is faster than working it out yourself; copy roughly 80% and differentiate on the remaining 20%, and allocate effort about 70% to what already works, 20% adjacent, 10% new. One tactic is requesting an interview under a pretext and asking how they acquire leads.",
+   "keywords": [
+    "copy a proven model",
+    "blueprint",
+    "80/20",
+    "70/20/10",
+    "reverse engineer an operator",
+    "interview them",
+    "don't invent it"
+   ],
+   "contradicts": [
+    "differentiate-dont-copy"
+   ]
+  },
+  {
+   "id": "differentiate-dont-copy",
+   "label": "Every tactic is copyable, so first-hand experience and genuine differentiation are the only durable edge",
+   "description": "Narrow until you find something only you can claim; sell where nobody else sells or what nobody else sells so you compete in a vacuum rather than on price. If you cannot articulate what makes you different you are an interchangeable me-too brand.",
+   "keywords": [
+    "everyone can copy the tactic",
+    "differentiate",
+    "only you can claim it",
+    "compete in a vacuum",
+    "me-too brand",
+    "something worth talking about",
+    "uncontested channels"
+   ],
+   "contradicts": [
+    "copy-a-proven-operator"
+   ]
+  },
+  {
+   "id": "tell-the-truth-including-your-weaknesses",
+   "label": "Advertise by stating facts and naming your own weaknesses rather than embellishing",
+   "description": "A flaw you claim yourself cannot be used against you and it amplifies your other claims; traits owners see as negatives, such as being small or having limited capacity, can be sold as advantages.",
+   "keywords": [
+    "tell the truth",
+    "state your weaknesses",
+    "don't exaggerate",
+    "a claimed flaw",
+    "being small is an advantage",
+    "limited capacity",
+    "honesty amplifies"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "write-at-a-low-reading-level",
+   "label": "Write marketing copy in very plain language, at roughly a fifth-grade reading level",
+   "description": "Simplifying the language of follow-up emails without changing the content is cited as raising conversion by 50%; run copy through a readability checker until it scores low.",
+   "keywords": [
+    "reading level",
+    "fifth grade",
+    "plain language",
+    "readability checker",
+    "simplify the words",
+    "50% lift",
+    "plain words"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "reduce-the-beliefs-and-the-friction",
+   "label": "Reduce the number of things a prospect must believe and the number of steps they must take",
+   "description": "Each extra belief kills conversion, and every additional page, form field and click between seeing the offer and booking lowers it. High-ticket sales still need multiple touch points because awareness on its own is worthless without consideration, while local businesses need far less funnel and nurture because local trust already exists and a one- or two-conversation close is normal.",
+   "keywords": [
+    "fewer beliefs",
+    "friction",
+    "strip the path",
+    "fewer clicks",
+    "fewer form fields",
+    "multiple touch points for high ticket",
+    "awareness needs consideration",
+    "price raises the journey length",
+    "local needs less funnel",
+    "one or two conversations",
+    "local trust",
+    "offer strength drives local",
+    "no long nurture"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "partnerships-and-alliances",
+   "label": "Borrow other people's audiences and reward the people who send you business",
+   "description": "Partner with non-competing businesses selling to the same customer so their endorsement transfers trust; formalise referrers into ongoing alliances, set up reciprocal arrangements with adjacent trades, and trade work or expertise for access to an audience by solving a real stated need rather than pitching. Reciprocal schemes fail if you only take. For local consumer businesses the same logic runs through giveaways, loyalty cards and small referral discounts — one giveaway costing a free service is cited as returning one to three repeat clients, and five regulars for about $25 of discounts.",
+   "keywords": [
+    "partnerships",
+    "strategic alliances",
+    "adjacent trades",
+    "joint giveaway",
+    "reciprocal referrals",
+    "access to their audience",
+    "non-competing",
+    "must send work both ways",
+    "giveaway",
+    "loyalty punch card",
+    "referral discount",
+    "free service",
+    "five regulars for $25",
+    "local consumer",
+    "repeat clients"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "offline-and-physical-touches",
+   "label": "Offline touchpoints and third-party marketplaces still produce clients and are widely ignored",
+   "description": "Physical tactics cited include lawn signs credited with $500,000 of sales on under $20,000 of spend, business cards left only in venues matching the clientele, unexpected researched gifts with a QR code, direct mail for small addressable markets, and displaying your own work in public. Freelance marketplaces and gig boards are cited at over $80,000 from one platform, where speed of application decides who wins and copy-paste proposals fail, and press coverage is worked by starting with small outlets and using that coverage to reach larger ones.",
+   "keywords": [
+    "lawn signs",
+    "yard signs",
+    "business cards",
+    "physical gift",
+    "direct mail",
+    "QR code",
+    "wear your work",
+    "offline",
+    "surprise gifts on odd dates",
+    "Upwork",
+    "freelance marketplace",
+    "job boards",
+    "check daily",
+    "speed of application",
+    "no copy-paste proposals",
+    "press coverage",
+    "work up the chain",
+    "small outlets first"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "sell-all-year-and-deliver-in-season",
+   "label": "For a seasonal business, sell all year round and concentrate delivery into the season",
+   "description": "Cross-train the team so off-season months go entirely into marketing and sales; seasonal buying windows such as a December uplift should be met with a matching offer.",
+   "keywords": [
+    "seasonal",
+    "sell all year",
+    "off season marketing",
+    "cross-train",
+    "December uplift",
+    "buying window",
+    "concentrate delivery"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "hire-and-pay-salespeople-on-performance",
+   "label": "Build a recruiting funnel for salespeople mirroring the demand funnel, and pay a base that only covers expenses plus commission",
+   "description": "Non-performers do not stay on such a structure, and money spent acquiring salespeople is claimed to return more than money spent acquiring customers.",
+   "keywords": [
+    "hire salespeople",
+    "recruiting funnel",
+    "base plus commission",
+    "non-performers leave",
+    "cost to hire versus gross profit",
+    "sales team"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "reputation-shows-up-in-the-numbers",
+   "label": "When impression costs stay flat but cost per lead rises, the problem is reputation, not the platform",
+   "description": "Negative word of mouth is said to outweigh positive by a large factor, so customer experience is the real lever; improving the customer experience is described as the single biggest driver of referral and repeat business, more than asking or networking.",
+   "keywords": [
+    "reputation",
+    "CPM flat but CPL rising",
+    "negative word of mouth",
+    "37 to 1",
+    "customer experience",
+    "not the platform",
+    "quality of your work"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "data-first-before-ai",
+   "label": "Becoming an AI-first company requires becoming a data-first company first",
+   "description": "AI needs structured business data to work on, so the data layer precedes any automation.",
+   "keywords": [
+    "data first",
+    "AI-first",
+    "structured data",
+    "prerequisite",
+    "CRM data",
+    "connect the systems"
+   ],
+   "contradicts": []
+  },
+  {
+   "id": "messaging-apps-for-follow-up",
+   "label": "Follow new leads up on messaging apps and SMS rather than email",
+   "description": "Opening a messaging-app conversation immediately after a form submission raises contact rate, and in markets where a messaging app is dominant it outperforms email — while working poorly where it is not. Some say to use messaging apps for local owners and reserve email for other markets.",
+   "keywords": [
+    "WhatsApp",
+    "SMS",
+    "text message",
+    "messaging app",
+    "after form submission",
+    "contact rate",
+    "owners don't read email",
+    "market dependent"
+   ],
+   "contradicts": []
+  }
+ ]
+}
