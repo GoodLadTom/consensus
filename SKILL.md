@@ -61,9 +61,25 @@ divides by how many videos were actually read. Silently reading 60 of 100
 does not make the answer noisier — it makes it wrong, and wrong in the
 direction of inventing dead advice that was never dead.
 
-Cost, measured rather than estimated: 100 transcripts is about 362,000 tokens
-of source, roughly 36,000 per agent across ten parallel agents. Comfortable.
-The binding constraint is fetch time, not context.
+## What a full run costs, measured
+
+Timings from the first complete run — 105 videos, 71 channels, 1,623 claims:
+
+| Phase | Wall clock | Notes |
+|---|---|---|
+| Scoping + discovery | 1 min | 270 candidates down to 140 |
+| Fetch | 18 min | rate-limit paced, unavoidable |
+| Extraction | 14 min | 11 agents in parallel |
+| **Taxonomy design** | **30 min** | **one agent — 42% of the run** |
+| Assignment | 10 min | 8 agents in parallel |
+| Analysis + report | seconds | deterministic |
+| **Total** | **72 min** | |
+
+Two things follow. Context is never the constraint — 100 transcripts is about
+362,000 tokens of source, roughly 36,000 per agent across ten agents. And the
+single-agent taxonomy pass is the bottleneck by a wide margin, taking longer
+than fetching 105 videos over a throttled connection. Shard it above ~800
+claims; `pipeline/04_clustering.md` says how.
 
 **When a topic cannot reach 100**, which happens on genuinely niche subjects,
 run with what exists rather than padding the corpus with loosely related
@@ -83,7 +99,7 @@ file, and how to know it worked.
 | 1 Discovery | `pipeline/01_discovery.md` | `scripts/discover.py` |
 | 2 Fetch | `pipeline/02_fetch.md` | `scripts/fetch.py` |
 | 3 Extraction | `pipeline/03_extraction.md` | parallel subagents |
-| 4 Clustering | `pipeline/04_clustering.md` | one subagent |
+| 4 Clustering | `pipeline/04_clustering.md` | one subagent, then parallel subagents |
 | 5 Analysis | `pipeline/05_analysis.md` | `scripts/analyse.py` |
 | 6 Report | `pipeline/06_report.md` | `scripts/report.py` |
 
@@ -130,3 +146,13 @@ a second run on a neighbouring topic re-fetches almost nothing.
   videos anyway on a long run; they are reported in the reports's summary.
 - Search reflects YouTube's ranking, which favours big channels. The corpus is
   what YouTube surfaces, not a random sample of the field.
+- **The two halves of the corpus are not sampled the same way**, and this is
+  the subtlest trap in the whole tool. Discovery fills the recent half partly
+  from a date-filtered search that reaches videos relevance ranking never
+  returns — newer, smaller, more tactical. The older half can only come from
+  relevance ranking, which favours evergreen strategy videos. On the first
+  live run that was 49% of the recent half against 0% of the old half, and
+  comparing them directly reported ordinary strategy advice as dead. The
+  absence test now runs only over videos relevance search reached; every video
+  still counts towards support and weighting. Do not pass
+  `--no-bucket-control` unless you know both halves were sampled alike.

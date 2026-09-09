@@ -121,6 +121,24 @@ corpus as thin. "Not enough evidence" is a valid finding here.
 
 It reads transcripts only. No comment sections.
 
+## What a run costs
+
+From the first complete run — 105 videos, 71 channels, 1,623 claims, 72
+minutes end to end:
+
+| Phase | Wall clock |
+|---|---|
+| Scoping + discovery | 1 min |
+| Fetch | 18 min |
+| Extraction (11 agents in parallel) | 14 min |
+| Taxonomy design (one agent) | 30 min |
+| Assignment (8 agents in parallel) | 10 min |
+| Analysis + report | seconds |
+
+Context is never the constraint. The single-agent taxonomy pass is, at 42% of
+the run — longer than fetching 105 videos over a throttled connection. It
+shards by theme above ~800 claims.
+
 ## Notes from building it
 
 A few things that were measured rather than assumed, in case they save you the
@@ -140,6 +158,16 @@ same afternoon:
   how the recent bucket is built without an API key. `EgIIBQ%3D%3D` is
   this year, `EgIIBA%3D%3D` this month — verified against live upload dates
   rather than taken on trust, because they drift.
+- **The two halves of a corpus are not sampled alike, and that will fool you.**
+  The date-filtered search reaches videos relevance ranking never returns;
+  relevance ranking reaches evergreen strategy videos the date filter cannot.
+  On the first live run the recent half was 49% date-filtered-only against 0%
+  of the old half, and comparing the two directly reported "work your existing
+  contacts" and "follow-ups produce most meetings" as dead advice. They are
+  not dead. They were simply absent from a novelty-skewed sample. The absence
+  test now runs only over the one bucket that spans both periods. This is the
+  kind of bug that produces confident, plausible, wrong findings, which is the
+  worst kind.
 
 ## Licence
 

@@ -12,7 +12,8 @@ STATUS = {
     "fading":   ("Fading", "Leaning old, but the recent silence is not yet statistically meaningful."),
     "thin":     ("Thin", "Too few independent channels to call. Listed for completeness."),
 }
-ORDER = ["settled", "expired", "current", "emerging", "fading", "thin"]
+ORDER = ["settled", "expired", "current", "contested", "emerging", "fading",
+         "thin"]
 
 CSS = """
 *{box-sizing:border-box}
@@ -218,7 +219,7 @@ def main():
     body = []
     by_id = {c["id"]: c for c in clusters}
     pairs = s.get("contradiction_pairs") or []
-    if pairs:
+    def contested_rows():
         rows = []
         for a_id, b_id in pairs:
             x, y = by_id.get(a_id), by_id.get(b_id)
@@ -232,16 +233,22 @@ def main():
                 f'<div class="side"><b>{esc(y.get("label") or y["id"])}</b>'
                 f'<span class="meta"><span class="pill">{plural(y["channels"], "channel")}</span>'
                 f'<span class="pill">{y["status"]}</span></span></div></div>')
-        if rows:
-            body.append(
-                '<section><div class="shead"><h2>Contested</h2>'
-                f'<span class="count">{len(rows)} '
-                f'{"disagreement" if len(rows) == 1 else "disagreements"}</span></div>'
-                '<p class="sdesc">Positions that directly contradict each other. '
-                'Reported as a disagreement rather than averaged into a middle '
-                'that nobody actually holds.</p>' + "".join(rows) + '</section>')
+        return rows
 
     for status in ORDER:
+        if status == "contested":
+            rows = contested_rows()
+            if rows:
+                body.append(
+                    '<section><div class="shead"><h2>Contested</h2>'
+                    f'<span class="count">{len(rows)} '
+                    f'{"disagreement" if len(rows) == 1 else "disagreements"}</span></div>'
+                    '<p class="sdesc">Positions that directly contradict '
+                    'each other. Reported as a disagreement rather than '
+                    'averaged into a middle that nobody actually holds.</p>'
+                    + "".join(rows) + '</section>')
+            continue
+
         group = [c for c in clusters if c["status"] == status]
         if not group:
             continue
